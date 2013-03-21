@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/webapps/team15/!svn/ver/98/branches/CapitalRound-webapp/webapp/app/views/users
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/webapps/team15/!svn/ver/61/branches/CapitalRound-webapp/webapp/app/views/users/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/webapps/team15/!svn/ver/73/branches/CapitalRound-webapp/webapp/app/views/users/index.html.erb
+END
+login.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/webapps/team15/!svn/ver/76/branches/CapitalRound-webapp/webapp/app/views/users/login.html.erb
+END
+invest.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/webapps/team15/!svn/ver/69/branches/CapitalRound-webapp/webapp/app/views/users/invest.html.erb
+END
+logout.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/webapps/team15/!svn/ver/17/branches/CapitalRound-webapp/webapp/app/views/users/logout.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/webapps/team15/!svn/ver/17/branches/CapitalRound-webapp/webapp/app/views/users/new.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/webapps/team15/!svn/ver/17/branches/CapitalRound-webapp/webapp/app/views/users/show.html.erb
+END
+_form.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/webapps/team15/!svn/ver/98/branches/CapitalRound-webapp/webapp/app/views/users/_form.html.erb
+END
+_teaser.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/webapps/team15/!svn/ver/89/branches/CapitalRound-webapp/webapp/app/views/users/_teaser.html.erb
+END
+_usernav.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/webapps/team15/!svn/ver/61/branches/CapitalRound-webapp/webapp/app/views/users/_usernav.html.erb
+END
+follow.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/webapps/team15/!svn/ver/69/branches/CapitalRound-webapp/webapp/app/views/users/follow.html.erb
+END

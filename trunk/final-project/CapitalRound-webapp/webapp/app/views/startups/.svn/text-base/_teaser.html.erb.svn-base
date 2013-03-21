@@ -1,0 +1,128 @@
+
+
+<div class="teaser">
+        <div class="teaser-info">
+        	<% campaign = @startup.Campaign %>
+              <% if campaign != nil %>
+                <% if campaign.status > 2 %>
+                  <p> Goal: <%= number_to_currency(campaign.goal_sum, :precision => 0) %> </p>
+                  <p> Valuation: <%= number_to_currency(campaign.valuation_sum, :precision => 0) %> </p>
+                  <p> Raised: <%= number_to_currency(campaign.raised_sum , :precision => 0) %> </p>
+                  <p> Closing date: <%= campaign.closing_date.strftime('%m/%d/%Y') %> </p>
+                <% else %>
+                  <p> Goal: N/A </p>
+                  <p> Valuation: N/A </p>
+                  <p> Raised: N/A </p>
+                  <p> Closing date: N/A </p>
+                <% end %>
+            <% else %>
+              <p> Goal: N/A </p>
+              <p> Valuation: N/A </p>
+              <p> Raised: N/A </p>
+              <p> Closing date: N/A </p>
+            <% end %>
+
+			
+			<% if session[:connection_type]==2 %>
+
+              <% if @startup.Campaign == nil %>
+              <%= link_to(:controller => 'campaigns', :action => 'new') do %>
+                  <button id="save-company" class="btn btn-success">
+                    Start Campaign
+                  </button>
+              <% end %>
+              <%else%>
+                  <% if @startup.Campaign.status != 3 %>
+                  <p class="notice" style="color:#ff0000;">Your campaign is pending approval.</p>
+                  <% end %>
+                  <% if @startup.Campaign.status == 3 %>
+                      <p class="notice" style="color:#46a546;">Your campaign has been approved.</p>
+                  <% end %>
+              <% end %>
+
+            <% else %>
+                <% if session[:connection_type]==1%>
+                    <%if !(@startup.Follower_users.include? @user)%>
+                        <%= link_to(:controller => 'authentications', :action => 'checklogin', :gotocontroller => 'investors' , :gotoaction => 'followcompany') do %>
+                            <button id="save-company" class="btn btn-success">
+                                Follow company
+                            </button>
+                        <% end %>
+                    <% else %>
+                      <%= link_to(:controller => 'authentications', :action => 'checklogin', :gotocontroller => 'investors', :gotoaction => 'unfollowcompany') do %>
+                          <button id="save-company" class="btn btn-success">
+                            Unfollow company
+                          </button>
+                      <% end %>
+                    <% end %>
+                <% else %>
+                    <%= link_to(:controller => 'authentications', :action => 'checklogin', :gotocontroller => 'investors' , :gotoaction => 'followcompany') do %>
+                      <%if !(@startup.Follower_users.include? @user)%>
+                        <button id="save-company" class="btn btn-success">
+                          Follow company
+						</button>
+                      <% else %>
+                          <%= link_to(:controller => 'authentications', :action => 'checklogin', :gotocontroller => 'investors', :gotoaction => 'unfollowcompany') do %>
+                              <button id="save-company" class="btn btn-success">
+                                Unfollow company
+                              </button>
+                          <% end %>
+                          <% end %>
+            </br>
+
+
+					<% end %>
+                <% end %>
+
+              <% if @startup.Campaign != nil && @startup.Campaign.status == 3%>
+
+                  <%= link_to(:controller => 'authentications', :action => 'checklogin', :gotocontroller => 'investors', :gotoaction => 'new', :newstartupid => params[:id]) do %>
+                      
+                      <button id="save-company" class="btn btn-success">
+                        <p>Invest in this startup</p>
+                      </button>
+                  <% end %>
+                  <%end%>
+			<% end %>
+            
+            
+        </div>
+            
+            
+        <div id="teaser-image" style="float:left">
+          <% if @startup.avatar? %>
+              <%= image_tag @startup.avatar.url(:thumb), :class => "img-rounded-mid"  %>
+          <% else %>
+              <img src='/images/profile/Nophoto.png' class="img-rounded-mid"  />
+          <% end %>
+
+
+          <div id="image_update">
+            <button class="btn btn-mini" onClick="MM_changeProp('image_form','','visibility','visible','DIV'); MM_changeProp('image_update','','visibility','hidden','DIV')">
+              Update Photo
+            </button>
+          </div>
+            <div id="image_form" style="visibility:hidden">
+                <%= form_for(@startup) do |f| %>
+                    <p><%= f.file_field :avatar%> <br>
+                      <%= submit_tag "Upload"%></p>
+                <% end %>
+            </div>
+
+        </div>
+    
+    
+        <div id="teaser-pitch-text">
+            <h2><%= @startup.name %></h2>
+            <h3><a href="http://<%= @startup.link %>" class="teaser-link-border" style="color:#FFFFFF"><%= @startup.link %></a></h3>
+            <p><%= simple_format h @startup.pitch %></p>
+            <% if session[:connection_type]==2 %>
+                <%= link_to(edit_startup_path(@startup)) do %>
+                  <button class="btn btn-small btn-primary">
+                    Update Info
+                  </button>
+                <% end %>
+            <% end %>
+        </div>
+
+</div>

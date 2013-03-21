@@ -1,0 +1,28 @@
+<div style="float:left; width:350px; margin:100px">
+    <h3>Please login to proceed</h3>
+
+    <%= form_tag :action => 'process_login' do %>
+        <p>User Name:<br />
+          <%= text_field "authentication", "username" %></p>
+        <p>Password:<br />
+          <%= password_field "authentication", "password" %></p>
+        <%= submit_tag 'Login',class: "btn btn-large btn-primary"%>
+        <a href = "javascript:history.back()">Go back</a>
+    <% end %>
+</div>
+
+<div style="float:left; width:300px">
+    <h3>New to Capital Round?</h3>
+    <p>Please fill out the following form</p>
+
+    <% if params[:notice] != nil || params[:notice] != "" %>
+        <div style="color:#ff0000">
+          <% @authentication.errors.full_messages.each do |msg| %>
+              <h5><%= msg %></h5>
+          <% end %>
+        </div>
+    <% end %>
+    <%= render 'form' %>
+
+    <%= link_to 'Back', :controller => 'home', :action => 'index' %>
+</div>

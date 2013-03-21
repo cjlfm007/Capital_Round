@@ -1,0 +1,6 @@
+<div>
+    <div id="news-description">
+    		<h2> <%= news.newsdate.strftime '%m/%d/%Y' %> - <%= news.title %> </h2>
+   	     	<p> <%= news.content %> </p>   	     	
+    </div>
+</div>

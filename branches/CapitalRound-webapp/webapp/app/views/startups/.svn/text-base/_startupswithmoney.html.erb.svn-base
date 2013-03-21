@@ -1,0 +1,44 @@
+ <% if startup.valuation_sum!=nil && startup.goal_sum!=nil && startup.raised_sum!=nil%>
+ <div class="projectfield"> 
+    
+
+                            
+<% div_name='project' + startup.id.to_s() %>
+
+	<%= link_to (startup) do %>
+
+            <div id="<%= div_name %>" class="project" onMouseMove="MM_changeProp('<%= div_name %>','','backgroundColor','#EBEBEB','DIV')" onMouseOut="MM_changeProp('<%= div_name %>','','backgroundColor','#FFFFFF','DIV')">
+             	<img class="thumbnail1" src='<%= startup.avatar %>'>
+              	<h2 class="project"><%= startup.name %></h2>
+
+                <div id="description">
+              		<p><%= simple_format h startup.pitch.firstletters(100) %></p>
+                </div>
+               
+
+                <div id="project-info">
+                
+        	        <ul class="nav">
+
+                    <li class="btn-link"> Valuation: <%= number_to_currency(startup.valuation_sum, :precision => 0) %> </li>
+                        <li class="btn-link"> Goal: <%= number_to_currency(startup.goal_sum, :precision => 0) %> </li>
+                        <li class="btn-link"> Raised: <%= number_to_currency(startup.raised_sum, :precision => 0) %></li>
+                        <div class="progress">
+
+                         <% a= startup.raised_sum * 100/ startup.goal_sum %>  
+                         <div class="bar bar-success" style="width:<%= a %>% ;">
+
+                         </div>
+                       </div>
+                  	</ul>
+                     </div>
+                </div>
+              
+
+
+        </div>
+       
+    <% end %>
+  <%end%>
+  
+

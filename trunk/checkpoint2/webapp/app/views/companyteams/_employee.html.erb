@@ -1,0 +1,14 @@
+<div>
+
+	<% if employee.picture_id != nil %>
+		<img class="employee-image" src='/images/profile/<%= employee.picture_id %>' />
+	<% else %>
+		<img class="employee-image" src='/images/profile/Nophoto.png' />
+    <% end %>
+    <div id="eamplyee-description">
+    		<h2> <%= employee.firstname %> <%= employee.lastname %> - <%= employee.title %>  </h2>
+   	     	<p> <%= employee.description %> </p>   	     	
+    </div>
+    
+    <div id="team-close"></div>
+</div>

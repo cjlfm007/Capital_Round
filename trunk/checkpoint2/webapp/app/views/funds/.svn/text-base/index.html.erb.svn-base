@@ -1,0 +1,47 @@
+<h1> Welcome to the OFEF view </h1>
+
+<table>
+  <tr>
+    <th>Startup</th>
+    <th>Link</th>
+    <th>Founder</th>
+    <th>CMU affilation</th>
+    <th>Industry </th>
+    <th>City</th>
+    <th>Detailed info</th>
+    <th>Status</th>
+
+  </tr>
+
+<% i=1 %>
+<% @startups.each do |startup| %>
+  <tr id='startup_<%= i %>' onMouseMove="MM_changeProp('startup_<%= i %>','','backgroundColor','#EBEBEB','tr')" onMouseOut="MM_changeProp('startup_<%= i %>','','backgroundColor','#FFFFFF','tr')">
+    <td><%= startup.name.firstletters(30) %></td>
+    <td class="table-center"><a href="http://<%= startup.link %>"> <%= startup.link %> </a></td>
+    <% user_id = startup.Investors.find_by_isowner(1).user_id %>
+    <% if user_id != nil %>
+    <td  class="table-center"><%= User.find(user_id).firstname %> <%= User.find(user_id).lastname %></td>
+    <% else %>
+    <td class="table-center">No founder...</td>
+    <% end %>
+    <td class="table-center"><%= User.find(user_id).cmuaffiliation.firstletters(10) %></td>
+    <td class="table-center">Web</td>
+    <td class="table-center">Pittsburgh, PA</td>
+    <td class="table-center"><%= link_to 'More...', :controller => 'startups', :action => 'show', :id => startup.id %></td>
+    <td class="table-center">
+    <%= form_for(startup) do |f| %>
+      <%= f.text_field :status %>
+    <%= f.submit 'Update Status'%>
+    <% end %>
+    </td>
+  </tr>
+  <% i=i+1 %>
+<% end %>
+</table>
+
+<br/>
+
+<h1>Recent news</h1>
+
+<%= render :partial => 'companyupdates/news', :collection => Companyupdate.find(:all, :limit => 10) %>
+

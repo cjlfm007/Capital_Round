@@ -1,0 +1,7 @@
+<h1>Editing companyupdate</h1>
+<% params[:startup_id]=@companyupdate.startup_id %>
+<%= render 'form' %>
+
+<p><%= link_to 'Show', @companyupdate %> |
+<%= link_to 'Back', :action => 'index', :startup_id => @companyupdate.startup_id %></p>
+

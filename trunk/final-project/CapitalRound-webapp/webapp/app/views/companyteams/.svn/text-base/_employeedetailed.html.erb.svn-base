@@ -1,0 +1,27 @@
+
+<div style="float:left" >
+
+  <% if employeedetailed.avatar? %>
+      <%= image_tag employeedetailed.avatar.url(:thumb), :class => "img-rounded-mid"  %>
+  <% else %>
+      <img src='/images/profile/Nophoto.png' class="img-rounded-mid"  />
+  <% end %>
+</div>
+
+<h3> <%= employeedetailed.firstname %> <%= employeedetailed.lastname %> - <%= employeedetailed.title %> </h3>
+<p> <%= employeedetailed.description %> </p>
+
+<div id="team-contacts">
+    <ul>
+        <li> Email: <a href="mailto:<%= employeedetailed.email %>"><%= employeedetailed.email %></a> </li>
+        <li> Bio: <a href="<%= employeedetailed.linkedin %>">LinkedIn Profile</a></li>
+        <li> Phone: <%= employeedetailed.phone %> </li>
+        <li> Address: <%= employeedetailed.address %> </li>
+    </ul>
+</div>
+
+<div style="clear:both"></div>
+
+<hr/>
+
+    

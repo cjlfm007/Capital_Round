@@ -1,0 +1,23 @@
+	<div id="team-description">
+	    <% if employeedetailed.picture_id != nil %>
+			<img class="team-image" src='/images/profile/<%= employeedetailed.picture_id %>' />
+		<% else %>
+			<img class="team-image" src='/images/profile/Nophoto.png' />
+	    <% end %>
+	    
+		<h2> <%= employeedetailed.firstname %> <%= employeedetailed.lastname %> <h2>
+   	 	<h3> <%= employeedetailed.title %> </h3>
+   	 	<p> <%= employeedetailed.description %> </p>   	     	
+    </div>
+    
+    <div id="team-contacts">
+    	<ul>
+    		<li> Email: <a href="mailto:<%= employeedetailed.email %>"><%= employeedetailed.email %></a> </li>
+   	     	<li> Bio: <a href="<%= employeedetailed.linkedin %>">LinkedIn Profile</a></li>
+   	     	<li> Phone: <%= employeedetailed.phone %> </li>
+   	     	<li> Address: <%= employeedetailed.address %> </li>  	     	
+   	 	</ul>
+    </div>
+    
+    <div id="team-close"></div>
+    

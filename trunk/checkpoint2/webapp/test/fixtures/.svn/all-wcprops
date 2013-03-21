@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/test/fixtures
+END
+funds.yml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/test/fixtures/funds.yml
+END
+companydocs.yml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/test/fixtures/companydocs.yml
+END
+startups.yml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/test/fixtures/startups.yml
+END
+companydocuments.yml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/test/fixtures/companydocuments.yml
+END
+commentaaas.yml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/test/fixtures/commentaaas.yml
+END
+investors.yml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/test/fixtures/investors.yml
+END
+companydescriptions.yml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/test/fixtures/companydescriptions.yml
+END
+pictures.yml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/test/fixtures/pictures.yml
+END
+companyteams.yml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/test/fixtures/companyteams.yml
+END
+users.yml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/test/fixtures/users.yml
+END
+documents.yml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/test/fixtures/documents.yml
+END
+campaigns.yml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/test/fixtures/campaigns.yml
+END
+authentications.yml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/test/fixtures/authentications.yml
+END
+.gitkeep
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/test/fixtures/.gitkeep
+END
+companyupdate.yml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/test/fixtures/companyupdate.yml
+END

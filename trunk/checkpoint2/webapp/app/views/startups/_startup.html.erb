@@ -1,0 +1,27 @@
+
+ <div class="projectfield"> 
+    
+         
+<% div_name='project' + startup.id.to_s() %>
+
+	<%= link_to (startup) do %>
+
+            <div id="<%= div_name %>" class="project" onMouseMove="MM_changeProp('<%= div_name %>','','backgroundColor','#EBEBEB','DIV')" onMouseOut="MM_changeProp('<%= div_name %>','','backgroundColor','#FFFFFF','DIV')">
+             	<img class="thumbnail1" src='<%= startup.avatar %>'>
+              	<h2 class="project"><%= startup.name %></h2>
+
+                <div id="project-description" class="project-decription-style">
+              		<p><%= simple_format h startup.pitch.firstletters(100) %></p>
+                </div>
+                <div id="project-info">
+        	        <ul class="nav">
+                        <li class="btn-link"> Goal: <%= number_to_currency(startup.goal_sum, :precision => 0) %> </li>
+                        <li class="btn-link"> Raised: <%= number_to_currency(startup.raised_sum, :precision => 0) %></li>
+                  	</ul>
+                </div>
+        </div>
+        
+    <% end %>
+  
+  </div>
+

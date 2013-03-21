@@ -1,0 +1,108 @@
+<div id="project-nav">
+  <ul class="nav nav-tabs">
+    <% if params[:action] == 'show' %>
+        <li  class="active">
+    <% else %>
+        <li>
+
+    <% end %>
+    <%= link_to 'Summary', :controller => 'startups', :action => 'show', :id => session[:startup_id] %>
+    </li>
+    <% if params[:action] == 'team' %>
+        <li  class="active">
+    <% else %>
+        <li>
+    <% end %>
+    <%= link_to 'Team', :controller => 'startups', :action => 'team' %>
+    </li>
+    <% if params[:action] == 'mentors' %>
+        <li  class="active">
+    <% else %>
+        <li>
+    <% end %>
+    </li>
+    <% if params[:action] == 'detailed' %>
+        <li  class="active">
+    <% else %>
+        <li>
+    <% end %>
+    <%= link_to 'Detailed', :controller =>  'startups' , :action => 'detailed' %>
+    </li>
+    <% if params[:action] == 'documents' %>
+        <li  class="active">
+    <% else %>
+        <li>
+    <% end %>
+    <%= link_to 'Documents', :controller =>  'startups' , :action => 'documents' %>
+    </li>
+
+
+
+		</li>
+<% if params[:action] == 'team' %>
+        <li  class="active">
+<% else %>
+        <li>
+<% end %>
+
+ 		</li>
+<% if params[:action] == 'mentors' %>
+        <li  class="active">
+<% else %>
+        <li>
+<% end %>
+      <%= link_to 'Investors', :controller => 'startups', :action => 'mentors' %>
+ 		</li>
+<% if params[:action] == 'detailed' %>
+        <li  class="active">
+<% else %>
+        <li>
+<% end %>
+
+ 		</li>
+
+<% if session[:connection_type] == 2 %>
+
+    <% if params[:controller] == 'campaigns'%>
+        <li  class="active">
+    <% else %>
+        <li>
+    <% end %>
+            <%= link_to 'Campaign', :controller =>  'campaigns' , :action => 'summary' %>
+        </li>
+    <% if params[:controller] == 'companyteams'%>
+        <li  class="active">
+    <% else %>
+        <li>
+    <% end %>
+            <%= link_to 'Manage team', :controller =>  'companyteams' , :action => 'index' %>
+        </li>
+    <% if params[:controller] == 'companyupdates'%>
+        <li  class="active">
+    <% else %>
+        <li>
+    <% end %>
+            <%= link_to 'Manage news', :controller =>  'companyupdates' , :action => 'index' %>
+        </li>
+<% end %>
+
+
+
+
+    <% if session[:id] != nil and session[:id] != 0  %>
+        <% if User.find(session[:id]).Funds.find_by_fund_id(1) != nil %>
+            <% if params[:action] == 'approval' %>
+                <li  class="active">
+            <% else %>
+                <li>
+            <% end %>
+            <%= link_to 'Approval', :controller => 'funds', :action => 'approval' %>
+            </li>
+
+        <% end %>
+    <% end %>
+  </ul>
+
+    </ul>
+</div>
+

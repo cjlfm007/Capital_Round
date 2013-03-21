@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head >
+  <Link rel="shortcut icon" href="/images/logo_icon.png">
+  <title>Capital Round for CMU</title>
+  <%= stylesheet_link_tag    "bootstrap", :media => "all" %>
+  <%= stylesheet_link_tag    "investors", :media => "all" %>
+  <%= stylesheet_link_tag    "main", :media => "all" %>
+  
+
+  <%= javascript_include_tag "prototype", "effects" %>
+  
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  
+    
+  <script type="text/javascript">
+  $(function(){
+   $('.carousel').carousel();
+});
+    function MM_changeProp(objId,x,theProp,theValue) { //v9.0
+      var obj = null; with (document){ if (getElementById)
+      obj = getElementById(objId); }
+      if (obj){
+      if (theValue == true || theValue == false)
+        eval("obj.style."+theProp+"="+theValue);
+      else eval("obj.style."+theProp+"='"+theValue+"'");
+      }
+    }
+    </script>
+    
+
+  
+</head>
+<body >
+
+
+<div class="navbar navbar-fixe-top" > 
+   <div id="container">
+
+    <div style="background-color: #444444;height: 40px;">
+      <nav>
+              <ul class="nav pull-left">
+            <li><span class="brand"> Capital Round</span>
+            
+            </li>
+            </ul>
+          </nav>
+              <ul class="nav pull-right">
+         <% if session[:id] == nil || session[:id] == 0 %>
+            <%= link_to 'Login', :controller => 'authentications', :action => 'login' %> |
+          <%= link_to 'Join Us', authentications_new_path %> 
+          <% else %> 
+         <%= link_to :controller => 'users', :id => session[:id] do %>
+            <%= User.find(session[:id]).firstname %> <%= User.find(session[:id]).lastname %>
+          <% end %> |
+          <%= link_to 'Logout', :controller => 'authentications', :action => 'logout' %> 
+        <% end %>
+      </ul>
+
+      </div>
+    
+      
+</div>
+  <div class="navbar-inner">
+        <div class="container">
+          
+          <nav>
+            <ul class="nav pull-left">
+            <li><div id="logo"> 
+              <img src="/images/logo_capitalround.png" width="230" > 
+            </div><li>
+          
+          <li class="badge1"> <%= link_to 'Invest in Startup'%></li>
+          <li class="badge1"> <%= link_to 'Raise Capital'%></li>
+         
+        </ul>
+     
+          <ul class="nav pull-right1">
+                <li ><%= link_to 'HOME', :controller => 'home' %></li>
+                <% if session[:id] != nil and session[:id] != 0  %>
+                  <% if User.find(session[:id]).Funds.find_by_fund_id(1) != nil %>
+                <li > <%= link_to 'OFEF view', :controller => 'funds', :action => 'index'%></li>
+            <% end %>
+                <% end %>
+                <li ><%= link_to 'PORTFOLIO', startups_path %></li>
+                <li ><%= link_to 'PEOPLE', :controller => 'investors', :action => 'people'%></li>
+                <li><%= link_to 'CONTACTS', home_contacts_path %></li>
+            </ul>
+        </nav>
+        </div>
+        
+  <div style="clear:both"></div>
+  </div>
+</div>        
+
+
+  <div style="clear:both"></div>
+
+
+
+<div  class="container">
+  
+
+    <%= yield %>
+
+
+    <div style="clear:both"></div>  
+    <div id="contacts-box">
+      <p>Copyright 2012 - Capital Round - Pittsburgh, PA</p>
+    </div>
+</div>
+
+</body>
+</html>

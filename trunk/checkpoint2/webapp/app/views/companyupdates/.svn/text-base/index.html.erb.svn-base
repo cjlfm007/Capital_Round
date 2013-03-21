@@ -1,0 +1,36 @@
+<h1>List of <%= Startup.find(params[:startup_id]).name %>'s news</h1>
+
+<% if @companyupdates.count > 0 %>
+
+  <table>
+    <tr>
+      <th>Startup</th>
+      <th>Title</th>
+      <th>Newsdate</th>
+      <th>Content</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+
+    <% @companyupdates.each do |companyupdate| %>
+      <tr>
+        <td><%= companyupdate.startup_id %></td>
+        <td><%= companyupdate.title %></td>
+        <td><%= companyupdate.newsdate %></td>
+        <td><%= companyupdate.content %></td>
+        <td><%= link_to 'Show', companyupdate %></td>
+        <td><%= link_to 'Edit', edit_companyupdate_path(companyupdate) %></td>
+        <td><%= link_to 'Destroy', companyupdate, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </table>
+  <br />
+<% else %>
+  <p>No news</p>
+<% end %>
+
+
+<p><%= link_to 'Add news', :action => 'new', :startup_id => params[:startup_id] %> |
+<%= link_to 'Return to the main page', :controller => "startups", :action => 'show', :id => params[:startup_id] %> </p>
+

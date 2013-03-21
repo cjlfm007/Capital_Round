@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/webapps/team15/!svn/ver/110/trunk/final-project/CapitalRound-webapp/webapp/app/views/startups
+END
+_startupnav.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/webapps/team15/!svn/ver/107/trunk/final-project/CapitalRound-webapp/webapp/app/views/startups/_startupnav.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/views/startups/index.html.erb
+END
+detailed.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/views/startups/detailed.html.erb
+END
+_campaign.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/views/startups/_campaign.html.erb
+END
+_startupswithoutmoney.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/views/startups/_startupswithoutmoney.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/views/startups/show.html.erb
+END
+_teaser.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/webapps/team15/!svn/ver/108/trunk/final-project/CapitalRound-webapp/webapp/app/views/startups/_teaser.html.erb
+END
+editcapital.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/views/startups/editcapital.html.erb
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/views/startups/edit.html.erb
+END
+team.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/views/startups/team.html.erb
+END
+mentors.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/views/startups/mentors.html.erb
+END
+_startupswithmoney.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/views/startups/_startupswithmoney.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/views/startups/new.html.erb
+END
+developermode.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/views/startups/developermode.html.erb
+END
+_formcapital.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/views/startups/_formcapital.html.erb
+END
+documents.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/views/startups/documents.html.erb
+END
+_startup.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/webapps/team15/!svn/ver/110/trunk/final-project/CapitalRound-webapp/webapp/app/views/startups/_startup.html.erb
+END
+_form.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/views/startups/_form.html.erb
+END

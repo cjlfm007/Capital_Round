@@ -1,0 +1,5 @@
+<h1>Information about <%= Startup.find(params[:startup_id]).name %></h1>
+
+<%= link_to 'Add a company description', :action => 'new', :startup_id => params[:startup_id] %>
+
+<%= render :partial => "description", :collection => @companydescriptions %>

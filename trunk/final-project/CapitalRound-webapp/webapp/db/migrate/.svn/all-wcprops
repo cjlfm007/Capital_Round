@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/db/migrate
+END
+20121029010126_create_authentications.rb
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/db/migrate/20121029010126_create_authentications.rb
+END
+20120706030247_create_investors.rb
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/db/migrate/20120706030247_create_investors.rb
+END
+20120703190837_create_startups.rb
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/db/migrate/20120703190837_create_startups.rb
+END
+20121122002057_create_univaffiliations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/db/migrate/20121122002057_create_univaffiliations.rb
+END
+20120909180232_create_companydescriptions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/db/migrate/20120909180232_create_companydescriptions.rb
+END
+20120809035443_create_companyupdates.rb
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/db/migrate/20120809035443_create_companyupdates.rb
+END
+20120705190028_create_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/db/migrate/20120705190028_create_users.rb
+END
+20121128153015_create_fieldstates.rb
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/db/migrate/20121128153015_create_fieldstates.rb
+END
+20121121180413_create_followers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/db/migrate/20121121180413_create_followers.rb
+END
+20121029045822_create_documents.rb
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/db/migrate/20121029045822_create_documents.rb
+END
+20121029040628_create_campaigns.rb
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/db/migrate/20121029040628_create_campaigns.rb
+END
+20120909211459_create_companyteams.rb
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/db/migrate/20120909211459_create_companyteams.rb
+END
+20121121180916_create_owners.rb
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/db/migrate/20121121180916_create_owners.rb
+END
+20120811003124_create_companydocuments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/db/migrate/20120811003124_create_companydocuments.rb
+END
+20121125233509_create_approvalstatuses.rb
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/db/migrate/20121125233509_create_approvalstatuses.rb
+END
+20120826185222_create_funds.rb
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/db/migrate/20120826185222_create_funds.rb
+END

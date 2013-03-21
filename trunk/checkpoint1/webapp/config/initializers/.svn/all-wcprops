@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/webapps/team15/!svn/ver/39/trunk/checkpoint1/webapp/config/initializers
+END
+inflections.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/webapps/team15/!svn/ver/39/trunk/checkpoint1/webapp/config/initializers/inflections.rb
+END
+session_store.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/webapps/team15/!svn/ver/39/trunk/checkpoint1/webapp/config/initializers/session_store.rb
+END
+secret_token.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/webapps/team15/!svn/ver/39/trunk/checkpoint1/webapp/config/initializers/secret_token.rb
+END
+backtrace_silencers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/webapps/team15/!svn/ver/39/trunk/checkpoint1/webapp/config/initializers/backtrace_silencers.rb
+END
+mime_types.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/webapps/team15/!svn/ver/39/trunk/checkpoint1/webapp/config/initializers/mime_types.rb
+END
+wrap_parameters.rb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/webapps/team15/!svn/ver/39/trunk/checkpoint1/webapp/config/initializers/wrap_parameters.rb
+END

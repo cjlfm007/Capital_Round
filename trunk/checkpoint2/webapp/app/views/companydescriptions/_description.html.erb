@@ -1,0 +1,8 @@
+  <h2> <%= description.title %>
+  	<% if description.isclosed == 1 %>
+  	  (Restricted access)
+  	<% end %>
+  </h2>
+  <p> <%= simple_format h description.content %> </p>
+  <%= link_to 'Edit', edit_companydescription_path(description) %> | 
+  <%= link_to 'Delete', description, method: :delete, data: { confirm: 'Are you sure?' } %>  

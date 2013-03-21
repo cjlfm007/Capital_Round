@@ -1,0 +1,34 @@
+<div id="project-nav">
+    <ul class="nav nav-tabs">
+<% if params[:action] == 'index' %>
+        <li  class="active">
+<% else %>
+        <li>
+<% end %>
+            <%= link_to 'News', :action => 'index', :id => @user.id%>
+        </li>
+<% if params[:action] == 'invest' %>
+        <li  class="active">
+<% else %>
+        <li>
+<% end %>
+            <%= link_to 'Portfolio', :action => 'invest', :id => @user.id %>
+        </li>
+<% if params[:action] == 'follow' %>
+          <li  class="active">
+<% else %>
+          <li>
+<% end %>
+      <%= link_to 'Following', :action => 'follow', :id => @user.id %>
+      </li>
+<% if session[:owner_type] == 1 %>
+    <% if params[:action] == 'edit' %>
+          <li  class="active">
+    <% else %>
+          <li>
+    <% end %>
+      <%= link_to 'Update profile', :action => 'edit', :id => @user.id %>
+      </li>
+<% end %>
+    </ul>
+</div>

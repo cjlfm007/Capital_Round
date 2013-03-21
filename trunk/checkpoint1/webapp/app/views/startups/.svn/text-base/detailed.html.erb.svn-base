@@ -1,0 +1,35 @@
+<%= render 'teaser', :id => params[:id] %>
+ 
+<%= render 'startupnav', :id => params[:id] %> 
+
+
+<div id="content-left">
+	<div id="teaser-text">
+		<% if session[:id] != nil %>
+			<% for companydescription in @companydescriptions %>
+				<h1> <%= companydescription.title %> </h1>
+   	     		<p> <%= simple_format h companydescription.content %> </p>
+			<% end %>
+		<% else %>
+			<% for companydescription in @companydescriptions.find(:all,  :conditions => ['main=1']) %>
+				<h1> <%= companydescription.title %> </h1>
+   	     		<p> <%= simple_format h companydescription.content %> </p>
+			<% end %>
+		<% end %>
+    </div>
+    
+    <% if session[:id] == nil %>
+    	<p> To learn more about this company please <%= link_to 'Login', :controller => 'authentications', :action => 'checklogin', :gotocontroller => 'startups' , :gotoaction => 'detailed' , :id => params[:id] %></p>	
+	<% end %>
+    
+</div>
+ 
+ 
+ 
+ <div id="content-right">   
+    <div id="teaser-charts">
+        <img src="/images/raw/company3-chart1.png" />
+        <img src="/images/raw/company3-chart2.png" />
+        <img src="/images/raw/company3-chart3.png" />        
+    </div>
+ </div>

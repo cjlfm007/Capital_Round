@@ -1,0 +1,6 @@
+<h1>Editing companydocument</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @companydocument %> |
+<%= link_to 'Back', companydocuments_path %>

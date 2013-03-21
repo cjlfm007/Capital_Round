@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/webapps/team15/!svn/ver/67/branches/CapitalRound-webapp/webapp/app/views/companydescriptions
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/webapps/team15/!svn/ver/12/branches/CapitalRound-webapp/webapp/app/views/companydescriptions/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/webapps/team15/!svn/ver/56/branches/CapitalRound-webapp/webapp/app/views/companydescriptions/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/webapps/team15/!svn/ver/67/branches/CapitalRound-webapp/webapp/app/views/companydescriptions/new.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/webapps/team15/!svn/ver/56/branches/CapitalRound-webapp/webapp/app/views/companydescriptions/show.html.erb
+END
+_description.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/webapps/team15/!svn/ver/55/branches/CapitalRound-webapp/webapp/app/views/companydescriptions/_description.html.erb
+END
+_form.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/webapps/team15/!svn/ver/67/branches/CapitalRound-webapp/webapp/app/views/companydescriptions/_form.html.erb
+END

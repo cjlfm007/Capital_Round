@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Startup:</b>
+  <%= @companyupdate.startup_id %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @companyupdate.title %>
+</p>
+
+<p>
+  <b>Newsdate:</b>
+  <%= @companyupdate.newsdate %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @companyupdate.content %>
+</p>
+
+
+<p><%= link_to 'Show', @companyupdate %> |
+<%= link_to 'Back', :action => 'index', :startup_id => @companyupdate.startup_id %></p>

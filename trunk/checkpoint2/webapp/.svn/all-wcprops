@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp
+END
+Gemfile.lock
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/Gemfile.lock
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/Rakefile
+END
+README.rdoc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/README.rdoc
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/.project
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/.gitignore
+END
+webapp.launch
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/webapp.launch
+END
+Gemfile
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/Gemfile
+END
+config.ru
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/config.ru
+END

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/webapps/team15/!svn/ver/98/branches/CapitalRound-webapp/webapp/app/views/campaigns
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/webapps/team15/!svn/ver/85/branches/CapitalRound-webapp/webapp/app/views/campaigns/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/webapps/team15/!svn/ver/14/branches/CapitalRound-webapp/webapp/app/views/campaigns/index.html.erb
+END
+secondstep.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/webapps/team15/!svn/ver/98/branches/CapitalRound-webapp/webapp/app/views/campaigns/secondstep.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/webapps/team15/!svn/ver/97/branches/CapitalRound-webapp/webapp/app/views/campaigns/new.html.erb
+END
+summary.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/webapps/team15/!svn/ver/98/branches/CapitalRound-webapp/webapp/app/views/campaigns/summary.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/webapps/team15/!svn/ver/14/branches/CapitalRound-webapp/webapp/app/views/campaigns/show.html.erb
+END
+_form.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/webapps/team15/!svn/ver/97/branches/CapitalRound-webapp/webapp/app/views/campaigns/_form.html.erb
+END

@@ -1,0 +1,61 @@
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this account from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+<<<<<<< .mine
+    Username<br />
+    <%= f.text_field :username %>
+  </div>
+  <div class="field">
+    Password<br />
+    <%= f.password_field :password %>
+  </div>
+  <div class="field">
+    First Name<br />
+=======
+    First Name:<br />
+>>>>>>> .r29
+    <%= f.text_field :firstname %>
+  </div>
+  <div class="field">
+    Last Name:<br />
+    <%= f.text_field :lastname %>
+  </div>
+  <div class="field">
+    Email: <br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    CMU Affiliation:<br />
+    <%= f.text_field :cmuaffiliation %>
+  </div>
+
+
+
+    <p>
+      <label>Upload Photo</label>
+      <%= image_tag(@user.avatar_url(:thumb)) if @user.avatar? %>
+      <%= f.file_field :avatar %>
+    </p>
+
+    <p>
+      <label>
+        <%= f.check_box :remove_avatar %>
+        Remove Photo
+      </label>
+    </p>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

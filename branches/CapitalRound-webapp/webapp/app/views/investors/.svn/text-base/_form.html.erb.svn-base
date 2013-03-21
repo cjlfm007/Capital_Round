@@ -1,0 +1,32 @@
+
+<%= form_for(@investor) do |f| %>
+
+    <%= hidden_field_tag "startup_id", @startup.id %>
+
+
+    <h1>You're making an investment on <%= @startup.name %></h1>
+
+    <p> Goal: <%= number_to_currency(@startup.Campaign.goal_sum, :precision => 0) %> </p>
+
+    <p> Raised: <%= number_to_currency(@startup.Campaign.raised_sum, :precision => 0) %> </p>
+
+    <p> Closing date: <%= @startup.Campaign.closing_date.strftime('%m/%d/%Y') %> </p>
+    <p> Valuation: <%= number_to_currency(@startup.Campaign.valuation_sum, :precision => 0) %> </p><br/>
+
+  <% if @investor.errors[:sum].length > 0 %>
+  <div class="field">
+    <font color = 'red'>Amount you'd like to invest (Please enter a value between $25 and $2000)<br /></font>
+    <%= f.number_field :sum, :style => "border-color:red" %>
+  </div>
+  <%else%>
+  <div class="field">
+      Amount you'd like to invest (Please enter a value between $25 and $2000)<br />
+   <%= f.number_field :sum%>
+   </div>
+  <%end%>
+
+  <div class="actions">
+    <%= f.submit "Invest"%>
+  </div>
+
+<% end %>

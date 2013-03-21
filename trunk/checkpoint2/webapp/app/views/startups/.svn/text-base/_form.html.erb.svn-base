@@ -1,0 +1,59 @@
+<%= form_for(@startup) do |f| %>
+  <% if @startup.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@startup.errors.count, "error") %> prohibited this startup from being saved:</h2>
+
+      <ul>
+      <% @startup.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <div class="field">
+    <h2>Company name*</h2>
+    <%= f.text_field :name %>
+  </div>
+  <br />
+  <div class="field">
+    <h2>Link to your website</h2>
+    <%= f.text_field :link %>
+  </div>
+  <br />  
+  <div class="field">
+    <h2>Short description</h2>
+    <p>Please provide a short description of your company and its business. The best way 
+    		is to have 2-3 sentences describing what the company does and why your business is 
+    		interesting</p>
+    <%= f.text_area :pitch %>
+  </div>
+
+
+
+  </br>
+  <p>* - requred fields </p>
+  
+  <%= hidden_field_tag 'nextstep', 'next' %>
+   
+  <%= link_to do %>
+  	<button id="next-company" class="bottox-box" onMouseMove="MM_changeProp('next-company','','backgroundColor','#669966','DIV')" onMouseOut="MM_changeProp('next-company','','backgroundColor','#66CC66','DIV')">
+    	<p>Update</p>
+  	</button>
+  <% end %>
+
+<% end %>
+
+<% if @startup.id != nil %>
+  <%= link_to(:action => 'show', :id => @startup.id) do %>
+	<button id="save-company" class="bottox-box" onMouseMove="MM_changeProp('save-company','','backgroundColor','#669966','DIV')" onMouseOut="MM_changeProp('save-company','','backgroundColor','#66CC66','DIV')">
+  		<p>Exit without Saving</p>
+  	</button>
+  <% end %>
+<% else %>
+  <%= link_to(:controller => 'investors', :action => 'index', :id => session[:id]) do %>
+	<button id="save-company" class="bottox-box" onMouseMove="MM_changeProp('save-company','','backgroundColor','#669966','DIV')" onMouseOut="MM_changeProp('save-company','','backgroundColor','#66CC66','DIV')">
+  		<p>Exit without Saving</p>
+  	</button>
+  <% end %>	
+<% end %>

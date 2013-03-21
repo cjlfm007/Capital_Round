@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/app/views/users
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/app/views/users/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/app/views/users/index.html.erb
+END
+login.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/app/views/users/login.html.erb
+END
+logout.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/app/views/users/logout.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/app/views/users/new.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/app/views/users/show.html.erb
+END
+_form.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/app/views/users/_form.html.erb
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/config/initializers
+END
+inflections.rb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/config/initializers/inflections.rb
+END
+session_store.rb
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/config/initializers/session_store.rb
+END
+secret_token.rb
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/config/initializers/secret_token.rb
+END
+backtrace_silencers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/config/initializers/backtrace_silencers.rb
+END
+mime_types.rb
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/config/initializers/mime_types.rb
+END
+wrap_parameters.rb
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/config/initializers/wrap_parameters.rb
+END

@@ -1,0 +1,65 @@
+<% make_counter1 = Makecount.make_counter %>
+
+<div class="container-fluid">
+
+    <h3>For Investors</h3>
+    <div class="row-fluid">
+<div class="thumbnail">
+    <% make_counter2 = 'home-investors' + make_counter1.call.to_s() %>
+   		<div class="home-investors" id="<%= make_counter2 %>" onMouseMove="MM_changeProp('<%= make_counter2 %>','','backgroundColor','#EBEBEB','DIV')" onMouseOut="MM_changeProp('<%= make_counter2 %>','','backgroundColor','#FFFFFF','DIV')">
+    		<h2>1. Browse companies</h2>
+    		<p>Go through our portfolio companies and pick those you like</p>
+		</div>
+	
+    <% make_counter2 = 'home-investors' + make_counter1.call.to_s() %>
+    <div class="home-investors" id="<%= make_counter2 %>" onMouseMove="MM_changeProp('<%= make_counter2 %>','','backgroundColor','#EBEBEB','DIV')" onMouseOut="MM_changeProp('<%= make_counter2 %>','','backgroundColor','#FFFFFF','DIV')">
+    		<h2>2. Invest</h2>
+			<p>Invest as much or as little as you want and become a shareholder</p>
+	</div>
+    <% make_counter2 = 'home-investors' + make_counter1.call.to_s() %>
+    <div class="home-investors" id="<%= make_counter2 %>" onMouseMove="MM_changeProp('<%= make_counter2 %>','','backgroundColor','#EBEBEB','DIV')" onMouseOut="MM_changeProp('<%= make_counter2 %>','','backgroundColor','#FFFFFF','DIV')">
+	    	<h2>3. Become a Mentor</h2>
+			<p>Help companies succeed: advice on strategy or specific approach</p>
+	</div>
+    <% make_counter2 = 'home-investors' + make_counter1.call.to_s() %>
+    <div class="home-investors" id="<%= make_counter2 %>" onMouseMove="MM_changeProp('<%= make_counter2 %>','','backgroundColor','#EBEBEB','DIV')" onMouseOut="MM_changeProp('<%= make_counter2 %>','','backgroundColor','#FFFFFF','DIV')">
+	    	<h2>4. Get return</h2>
+			<p>Get return on equity. Contribute to the University community!</p>
+	</div>
+	
+	<div style="clear:both"><br/></div>
+    </div></div>
+
+    <h3>For Startups</h3>
+     <div class="row-fluid">
+<div class="thumbnail">
+    <% make_counter2 = 'home-investors' + make_counter1.call.to_s() %>
+    <div class="home-investors" id="<%= make_counter2 %>" onMouseMove="MM_changeProp('<%= make_counter2 %>','','backgroundColor','#EBEBEB','DIV')" onMouseOut="MM_changeProp('<%= make_counter2 %>','','backgroundColor','#FFFFFF','DIV')">
+    		<h2>1. Submit application</h2>
+			<p>We will help you present you company, if needed</p>
+	</div>
+    <% make_counter2 = 'home-investors' + make_counter1.call.to_s() %>
+    <div class="home-investors" id="<%= make_counter2 %>" onMouseMove="MM_changeProp('<%= make_counter2 %>','','backgroundColor','#EBEBEB','DIV')" onMouseOut="MM_changeProp('<%= make_counter2 %>','','backgroundColor','#FFFFFF','DIV')">
+			<h2>2. Raise capital</h2>
+			<p>Wait until your company gets funds from our Investors</p>
+	</div>
+    <% make_counter2 = 'home-investors' + make_counter1.call.to_s() %>
+    <div class="home-investors" id="<%= make_counter2 %>" onMouseMove="MM_changeProp('<%= make_counter2 %>','','backgroundColor','#EBEBEB','DIV')" onMouseOut="MM_changeProp('<%= make_counter2 %>','','backgroundColor','#FFFFFF','DIV')">
+			<h2>3. Use resources</h2>
+			<p>Mentors as well as network of professionals from CMU</p>
+	</div>
+    <% make_counter2 = 'home-investors' + make_counter1.call.to_s() %>
+    <div class="home-investors" id="<%= make_counter2 %>" onMouseMove="MM_changeProp('<%= make_counter2 %>','','backgroundColor','#EBEBEB','DIV')" onMouseOut="MM_changeProp('<%= make_counter2 %>','','backgroundColor','#FFFFFF','DIV')">
+			<h2>4. Be successful</h2>
+			<p>Next rounds of funding, acquisition and, of course, IPO!</p>
+	</div>
+	
+	<div style="clear:both"><br/></div>
+	</div></div>
+	    
+    <h1>Featured startups</h1>
+    
+</div>
+    
+    <%= render :partial =>  Startup.find(:all, :limit => 3), :template => 'startups/_startup' %> 
+	 

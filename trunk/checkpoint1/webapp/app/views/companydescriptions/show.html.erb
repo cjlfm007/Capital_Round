@@ -1,0 +1,4 @@
+<p id="notice"><%= notice %></p>
+<%= render :partial => "description", :collection => Companydescription.find(:all,  :conditions => ['id='+params[:id]]) %>
+
+ | <%= link_to 'See all', :action => 'index', :startup_id => params[:startup_id] %>

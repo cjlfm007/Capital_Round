@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/webapps/team15/!svn/ver/96/branches/CapitalRound-webapp/webapp/test/unit/helpers
+END
+companydocs_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/webapps/team15/!svn/ver/12/branches/CapitalRound-webapp/webapp/test/unit/helpers/companydocs_helper_test.rb
+END
+funds_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/webapps/team15/!svn/ver/12/branches/CapitalRound-webapp/webapp/test/unit/helpers/funds_helper_test.rb
+END
+startups_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/webapps/team15/!svn/ver/14/branches/CapitalRound-webapp/webapp/test/unit/helpers/startups_helper_test.rb
+END
+home_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/webapps/team15/!svn/ver/12/branches/CapitalRound-webapp/webapp/test/unit/helpers/home_helper_test.rb
+END
+companyupdates_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/webapps/team15/!svn/ver/14/branches/CapitalRound-webapp/webapp/test/unit/helpers/companyupdates_helper_test.rb
+END
+fund_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/webapps/team15/!svn/ver/12/branches/CapitalRound-webapp/webapp/test/unit/helpers/fund_helper_test.rb
+END
+investors_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/webapps/team15/!svn/ver/12/branches/CapitalRound-webapp/webapp/test/unit/helpers/investors_helper_test.rb
+END
+companydescriptions_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/webapps/team15/!svn/ver/12/branches/CapitalRound-webapp/webapp/test/unit/helpers/companydescriptions_helper_test.rb
+END
+pictures_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/webapps/team15/!svn/ver/12/branches/CapitalRound-webapp/webapp/test/unit/helpers/pictures_helper_test.rb
+END
+companyteams_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/webapps/team15/!svn/ver/12/branches/CapitalRound-webapp/webapp/test/unit/helpers/companyteams_helper_test.rb
+END
+documents_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/webapps/team15/!svn/ver/12/branches/CapitalRound-webapp/webapp/test/unit/helpers/documents_helper_test.rb
+END
+users_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/webapps/team15/!svn/ver/14/branches/CapitalRound-webapp/webapp/test/unit/helpers/users_helper_test.rb
+END
+authentications_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/webapps/team15/!svn/ver/14/branches/CapitalRound-webapp/webapp/test/unit/helpers/authentications_helper_test.rb
+END
+campaigns_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/webapps/team15/!svn/ver/14/branches/CapitalRound-webapp/webapp/test/unit/helpers/campaigns_helper_test.rb
+END
+user_sessions_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/webapps/team15/!svn/ver/96/branches/CapitalRound-webapp/webapp/test/unit/helpers/user_sessions_helper_test.rb
+END
+peoples_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/webapps/team15/!svn/ver/12/branches/CapitalRound-webapp/webapp/test/unit/helpers/peoples_helper_test.rb
+END
+user_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/webapps/team15/!svn/ver/14/branches/CapitalRound-webapp/webapp/test/unit/helpers/user_helper_test.rb
+END

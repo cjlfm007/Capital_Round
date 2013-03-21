@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/webapps/team15/!svn/ver/111/trunk/final-project/CapitalRound-webapp/webapp/app/models
+END
+companyteam.rb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/models/companyteam.rb
+END
+user.rb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/webapps/team15/!svn/ver/111/trunk/final-project/CapitalRound-webapp/webapp/app/models/user.rb
+END
+document.rb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/models/document.rb
+END
+authentication.rb
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/webapps/team15/!svn/ver/111/trunk/final-project/CapitalRound-webapp/webapp/app/models/authentication.rb
+END
+campaign.rb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/models/campaign.rb
+END
+approvalstatuses.rb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/models/approvalstatuses.rb
+END
+fieldstate.rb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/models/fieldstate.rb
+END
+univaffiliation.rb
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/models/univaffiliation.rb
+END
+follower.rb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/models/follower.rb
+END
+owner.rb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/models/owner.rb
+END
+fund.rb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/models/fund.rb
+END
+startup.rb
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/models/startup.rb
+END
+.gitkeep
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/models/.gitkeep
+END
+companydocument.rb
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/models/companydocument.rb
+END
+investor.rb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/models/investor.rb
+END
+companyupdate.rb
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/models/companyupdate.rb
+END
+companydescription.rb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/models/companydescription.rb
+END
+allfield.rb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/models/allfield.rb
+END

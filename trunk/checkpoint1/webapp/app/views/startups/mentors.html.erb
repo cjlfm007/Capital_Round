@@ -1,0 +1,7 @@
+<%= render 'teaser', :id => params[:id] %>
+ 
+<%= render 'startupnav' %> 
+
+<% for f in Investor.find(:all,  :conditions => ['startup_id=' + params[:id] +' AND ismentor=1']) %>
+	<%= render :partial => 'investors/people', :collection => User.find(:all,  :conditions => ['id=' + f.user_id.to_s]) %>
+<% end %>

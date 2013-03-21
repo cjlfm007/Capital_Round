@@ -1,0 +1,30 @@
+<%= form_tag(:action => 'create', :multipart => true) do %>
+
+  <div class="field">
+    User Name:<br />
+    <%= text_field :authentication, :username %>
+  </div>
+  <div class="field">
+    Password:<br />
+    <%= password_field :authentication, :password %>
+  </div>
+  <div class="field">
+    First Name:<br />
+    <%= text_field :user, :firstname %>
+  </div>
+  <div class="field">
+    Last Name:<br />
+    <%= text_field :user, :lastname %>
+  </div>
+  <div class="field">
+    Email address:<br />
+    <%= text_field :user, :email %>
+  </div>
+  <div class="field">
+    CMU Affiliation:<br />
+    <%= text_field :user, :cmuaffiliation %>
+  </div>
+  <div class="actions">
+    <%= submit_tag 'Create account',class: "btn btn-large btn-primary" %>
+  </div>
+<% end %>

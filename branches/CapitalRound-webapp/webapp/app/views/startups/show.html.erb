@@ -1,0 +1,86 @@
+<%= render 'teaser' %>
+
+<%= render :partial => 'startupnav' %>
+
+<div id="content-right">
+
+	<div id="people-list1">
+		<h3> Founders </h3>
+        <% if @startup_owners != nil %>
+            <%= render :partial => 'investors/person', :collection => @startup_owners %>
+            <%= link_to 'More...', :controller => 'startups', :action => 'mentors' %>
+        <% else %>
+            <h4>This company does not have owners </h4>
+        <% end %>
+	</div>
+
+	<div id="people-list2">
+      <h3> Investors </h3>
+      <% if @startup_investors != nil %>
+          <%= render :partial => 'investors/person', :collection => @startup_investors %>
+          <%= link_to 'More...', :controller => 'startups', :action => 'mentors' %>
+      <% else %>
+          <p>This company does not have investors </p>
+      <% end %>
+	</div>
+
+
+	<div id="people-list3">
+      <h3> Followers </h3>
+      <% if @startup_followers != nil %>
+          <%= render :partial => 'investors/person', :collection => @startup_followers %>
+          <%= link_to 'More...', :controller => 'startups', :action => 'mentors' %>
+      <% else %>
+          <p>This company does not have followers </p>
+      <% end %>
+	</div>
+
+
+</div>
+
+<div id="content-left">
+
+	<div id="teaser-text">
+		<% if @startup_description != nil %>
+    		<h3> <%= @allfield.field_name %> </h3>
+   	     	<p> <%= simple_format h @startup_description.content %> </p>
+		<% end %>
+		<% if session[:connection_type] ==2 %>
+    		<%= link_to(:controller => 'companydescriptions', :action => 'index') do %>
+				<button class="btn btn-small btn-primary">
+                    Edit description
+				</button>
+			<% end %>
+    	<% end %>
+
+    </div>
+
+<% if @startup_teams != nil or session[:connection_type] == 2  %>
+	<div id="teaser-text">
+		<h3>Team</h3>
+		<%= render :partial => 'companyteams/employee', :collection => @startup_teams %>
+		<% if session[:connection_type] ==2 %>
+    		<%= link_to(:controller => 'companyteams', :action => 'index') do %>
+				<button class="btn btn-small btn-primary">
+                  Edit team info
+				</button>
+			<% end %>
+    	<% end %>
+	</div>
+<% end %>
+
+<% if @startup_updates != nil or session[:connection_type] == 2  %>
+	<div id="teaser-text">
+		<h3>Company news</h3>
+		<%= render :partial => 'companyupdates/news', :collection => @startup_updates %>
+		<% if session[:connection_type] ==2 %>
+    		<%= link_to(:controller => 'companyupdates', :action => 'index') do %>
+				<button class="btn btn-small btn-primary">
+                  Edit / Add news
+				</button>
+			<% end %>
+    	<% end %>
+	</div>
+<% end %>
+
+</div>

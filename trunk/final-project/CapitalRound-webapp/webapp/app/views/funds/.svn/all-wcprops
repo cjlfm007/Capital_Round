@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/webapps/team15/!svn/ver/111/trunk/final-project/CapitalRound-webapp/webapp/app/views/funds
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/views/funds/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/webapps/team15/!svn/ver/107/trunk/final-project/CapitalRound-webapp/webapp/app/views/funds/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/views/funds/new.html.erb
+END
+allusers.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/views/funds/allusers.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/views/funds/show.html.erb
+END
+_form.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/views/funds/_form.html.erb
+END
+approval.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/webapps/team15/!svn/ver/111/trunk/final-project/CapitalRound-webapp/webapp/app/views/funds/approval.html.erb
+END

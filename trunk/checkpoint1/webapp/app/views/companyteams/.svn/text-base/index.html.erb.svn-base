@@ -1,0 +1,5 @@
+<h1>Team of the company <%= Startup.find(params[:startup_id]).name %></h1>
+
+<%= link_to 'Add a new team member', :action => 'new', :startup_id => params[:startup_id] %>
+
+<%= render :partial => "employeefull", :collection => @companyteams %>

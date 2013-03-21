@@ -1,0 +1,19 @@
+<div id="project-nav">
+	<ul>
+		<li>
+			<%= link_to 'Summary', :controller => 'startups', :action => 'show', :id => params[:id] %>
+		</li>
+		<li>
+			<%= link_to 'Team', :controller => 'startups', :action => 'team', :id => params[:id] %>
+ 		</li>
+ 		<li>
+ 			<%= link_to 'Mentors', :controller => 'startups', :action => 'mentors', :id => params[:id] %>
+ 		</li>
+ 		<li>
+ 			<%= link_to 'Detailed', :controller =>  'startups' , :action => 'detailed' , :id => params[:id] %>
+ 		</li>
+ 		<li>
+ 			<%= link_to 'Documents', :controller =>  'startups' , :action => 'documents' , :id => params[:id] %>
+		</li>
+	</ul>
+</div>

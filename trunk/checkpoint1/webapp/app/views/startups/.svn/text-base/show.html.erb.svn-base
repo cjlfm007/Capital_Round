@@ -1,0 +1,84 @@
+<%= render 'teaser' %>
+
+<%= render :partial => 'startupnav' %> 
+
+<div id="content-right">
+
+	<div id="people-list">
+
+		<h1> Mentors </h1>
+		<% for f in @startup.Investors.find(:all,  :conditions => ['ismentor=1']) %>
+			<%= render :partial => 'investors/person', :collection => User.find(:all,  :conditions => ['id=' + f.user_id.to_s]) %>
+		<% end %>
+		<%= link_to 'More...', :controller => 'startups', :action => 'mentors', :id => params[:id] %>
+	</div>
+	
+	<div id="people-list">
+
+		<h1> Investors </h1>
+		<% for f in @startup.Investors.find(:all,  :conditions => ['isinvestor=1']) %>
+			<%= render :partial => 'investors/person', :collection => User.find(:all,  :conditions => ['id=' + f.user_id.to_s]) %>
+		<% end %>
+		<%= link_to 'More...', :controller => 'startups', :action => 'mentors', :id => params[:id] %>
+	</div>
+	
+		
+	<div id="people-list">
+
+		<h1> Founders </h1>
+		<% for f in @startup.Investors.find(:all,  :conditions => ['isowner=1']) %>
+			<%= render :partial => 'investors/person', :collection => User.find(:all,  :conditions => ['id=' + f.user_id.to_s]) %>
+		<% end %>
+	</div>
+	
+	<div id="people-list">
+		<h1> Documents </h1>
+			<%= render :partial => 'companydocuments/companydocuments', :collection => Companydocument.find(:all,  :conditions => ['startup_id=' + params[:id]]) %>
+	</div>
+	
+</div>
+
+<div id="content-left">
+	
+	<div id="teaser-text">
+		<% for companydescription in @startup.Companydescriptions.find(:all,  :conditions => ['isclosed=0'],:limit => 1) %>
+    		<h1> <%= companydescription.title %> </h1>
+   	     	<p> <%= simple_format h companydescription.content %> </p>
+		<% end %>
+		<p><%= link_to 'More...', :controller => 'authentications', :action => 'checklogin', :gotocontroller => 'startups' , :gotoaction => 'detailed' , :id => params[:id] %></p>
+		<% if $connectiontype ==2 %>
+    		<%= link_to(:controller => 'companydescriptions', :action => 'index', :startup_id => params[:id]) do %>
+				<button id="edit-description" class="bottox-box-small" onMouseMove="MM_changeProp('edit-description','','backgroundColor','#669966','DIV')" onMouseOut="MM_changeProp('edit-description','','backgroundColor','#66CC66','DIV')">
+					<p>Edit</p>
+				</button>
+			<% end %>
+    	<% end %>
+
+    </div>
+    	
+	<div id="teaser-text">
+		<h1>Team</h1>
+		<%= render :partial => 'companyteams/employee', :collection => Companyteam.find(:all,:conditions => ['startup_id=' + params[:id]]) %>
+		<p><%= link_to 'More...', :controller => 'startups', :action => 'team', :id => params[:id] %></p>
+		<% if $connectiontype ==2 %>
+    		<%= link_to(:controller => 'companyteams', :action => 'index', :startup_id => params[:id]) do %>
+				<button id="edit-team" class="bottox-box-small" onMouseMove="MM_changeProp('edit-team','','backgroundColor','#669966','DIV')" onMouseOut="MM_changeProp('edit-team','','backgroundColor','#66CC66','DIV')">
+					<p>Edit</p>
+				</button>
+			<% end %>
+    	<% end %>
+	</div>
+		
+	<div id="teaser-text">
+		<h1>Company news</h1>
+		<%= render :partial => 'companyupdates/news', :collection => Companyupdate.find(:all,:conditions => ['startup_id=' + params[:id]]) %>
+		<% if $connectiontype ==2 %>
+    		<%= link_to(:controller => 'companyupdates', :action => 'index', :startup_id => params[:id]) do %>
+				<button id="edit-news" class="bottox-box-small" onMouseMove="MM_changeProp('edit-news','','backgroundColor','#669966','DIV')" onMouseOut="MM_changeProp('edit-news','','backgroundColor','#66CC66','DIV')">
+					<p>Edit</p>
+				</button>
+			<% end %>
+    	<% end %>	
+	</div>
+	
+</div>

@@ -1,0 +1,26 @@
+<h3>Start campaign. Step 2</h3>
+<h4>Information about the Company</h4>
+
+<% for k in 1..@i %>
+     <%= form_for(@companydescriptions[k]) do |f| %>
+        <% allfield =  Allfield.find(@companydescriptions[k].allfield_id)   %>
+        <h3><%= allfield.field_name   %>
+
+             <%= f.select("field_status", options_from_collection_for_select(allfield.Fieldstates, :field_status, :field_status, @companydescriptions[k].field_status)) %>
+
+             <%= f.submit 'Update', :class => "btn btn-primary"%>
+        </h3>
+
+        <%= f.hidden_field :allfield_id, :value => allfield.id %>
+        <%= f.text_area :content %> </p>
+
+        <%= hidden_field_tag 'route', 'campaign'  %>
+
+     <% end %>
+<% end %>
+
+<%= link_to :action => "summary" do %>
+    <button id="next-company" class="btn btn-primary">
+      <p>Save and Send for Approval</p>
+    </button>
+<% end %>

@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/webapps/team15/!svn/ver/98/branches/CapitalRound-webapp/webapp/test/fixtures
+END
+funds.yml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/webapps/team15/!svn/ver/14/branches/CapitalRound-webapp/webapp/test/fixtures/funds.yml
+END
+companydocs.yml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/webapps/team15/!svn/ver/14/branches/CapitalRound-webapp/webapp/test/fixtures/companydocs.yml
+END
+approvalstatuses.yml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/webapps/team15/!svn/ver/96/branches/CapitalRound-webapp/webapp/test/fixtures/approvalstatuses.yml
+END
+startups.yml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/webapps/team15/!svn/ver/14/branches/CapitalRound-webapp/webapp/test/fixtures/startups.yml
+END
+companydocuments.yml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/webapps/team15/!svn/ver/14/branches/CapitalRound-webapp/webapp/test/fixtures/companydocuments.yml
+END
+commentaaas.yml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/webapps/team15/!svn/ver/12/branches/CapitalRound-webapp/webapp/test/fixtures/commentaaas.yml
+END
+investors.yml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/webapps/team15/!svn/ver/14/branches/CapitalRound-webapp/webapp/test/fixtures/investors.yml
+END
+companydescriptions.yml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/webapps/team15/!svn/ver/14/branches/CapitalRound-webapp/webapp/test/fixtures/companydescriptions.yml
+END
+pictures.yml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/webapps/team15/!svn/ver/12/branches/CapitalRound-webapp/webapp/test/fixtures/pictures.yml
+END
+companyteams.yml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/webapps/team15/!svn/ver/14/branches/CapitalRound-webapp/webapp/test/fixtures/companyteams.yml
+END
+users.yml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/webapps/team15/!svn/ver/14/branches/CapitalRound-webapp/webapp/test/fixtures/users.yml
+END
+documents.yml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/webapps/team15/!svn/ver/14/branches/CapitalRound-webapp/webapp/test/fixtures/documents.yml
+END
+campaigns.yml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/webapps/team15/!svn/ver/14/branches/CapitalRound-webapp/webapp/test/fixtures/campaigns.yml
+END
+authentications.yml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/webapps/team15/!svn/ver/14/branches/CapitalRound-webapp/webapp/test/fixtures/authentications.yml
+END
+user_sessions.yml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/webapps/team15/!svn/ver/96/branches/CapitalRound-webapp/webapp/test/fixtures/user_sessions.yml
+END
+.gitkeep
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/webapps/team15/!svn/ver/12/branches/CapitalRound-webapp/webapp/test/fixtures/.gitkeep
+END
+fieldstates.yml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/webapps/team15/!svn/ver/98/branches/CapitalRound-webapp/webapp/test/fixtures/fieldstates.yml
+END
+companyupdate.yml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/webapps/team15/!svn/ver/14/branches/CapitalRound-webapp/webapp/test/fixtures/companyupdate.yml
+END
+univaffiliations.yml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/webapps/team15/!svn/ver/56/branches/CapitalRound-webapp/webapp/test/fixtures/univaffiliations.yml
+END
+followers.yml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/webapps/team15/!svn/ver/53/branches/CapitalRound-webapp/webapp/test/fixtures/followers.yml
+END
+owners.yml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/webapps/team15/!svn/ver/53/branches/CapitalRound-webapp/webapp/test/fixtures/owners.yml
+END

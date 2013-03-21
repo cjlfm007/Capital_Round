@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/webapps/team15/!svn/ver/93/branches/CapitalRound-webapp/webapp/app/views/authentications
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/webapps/team15/!svn/ver/14/branches/CapitalRound-webapp/webapp/app/views/authentications/edit.html.erb
+END
+login_join.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/webapps/team15/!svn/ver/65/branches/CapitalRound-webapp/webapp/app/views/authentications/login_join.html.erb
+END
+login.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/webapps/team15/!svn/ver/84/branches/CapitalRound-webapp/webapp/app/views/authentications/login.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/webapps/team15/!svn/ver/73/branches/CapitalRound-webapp/webapp/app/views/authentications/new.html.erb
+END
+_form.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/webapps/team15/!svn/ver/93/branches/CapitalRound-webapp/webapp/app/views/authentications/_form.html.erb
+END

@@ -1,0 +1,8 @@
+<%= render 'teaser', :id => params[:id] %>
+ 
+<%= render 'startupnav', :id => params[:id] %> 
+
+<div id="content-all">
+	<h1>Company companydocuments</h1>
+	<%= render :partial => 'companydocuments/companydocuments', :collection => Companydocument.find(:all,  :conditions => ['startup_id=' + params[:id]]) %>
+</div>	

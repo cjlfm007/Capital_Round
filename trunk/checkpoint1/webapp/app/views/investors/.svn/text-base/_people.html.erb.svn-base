@@ -1,0 +1,40 @@
+<% div_name='investor' + people.id.to_s() %>
+
+	<%= link_to :controller => 'investors', :id => people.id do %>
+        <div id="<%= div_name %>" class="people-frame" onMouseMove="MM_changeProp('<%= div_name %>','','backgroundColor','#EBEBEB','DIV')" onMouseOut="MM_changeProp('<%= div_name %>','','backgroundColor','#FFFFFF','DIV')">
+ 	        	<% if  people.image_path != nil %>
+    	        	<img class="people-image" src='/images/profile/<%= people.image_path %>'>
+				<% else %>
+					<img class="people-image" src='/images/profile/Nophoto.png' />
+            	<% end %>
+         	
+          		<h2><%= people.firstname %>  <%= people.lastname %></h2>
+        	    <div id="people-description" class="project-decription-style">
+            
+    	        	<% mentornumber = Investor.count :all, :conditions => 'user_id = ' + people.id.to_s() + ' and ismentor = 2' %>
+	          		<% if mentornumber != 0 %>
+           				<% if mentornumber == 1 %>
+          					<p>Mentor for one company</p>
+          				<% else %>
+        	  				<p>Mentor for <%= mentornumber %> companies</p>
+    	      			<% end %>
+	          		<% else %>
+          				<p> Not a Mentor for our companies </p>
+          			<% end %>
+          			
+        	    	<% investornumber = Investor.count :all, :conditions => 'user_id = ' + people.id.to_s() + ' and isinvestor = 1' %>
+    	      		<% if investornumber != 0 %>
+	           			<% if investornumber == 1 %>
+          					<p>Investor for one company</p>
+          				<% else %>
+          					<p>Investor for <%= investornumber %> companies</p>
+          				<% end %>
+        	  		<% else %>
+    	      			<p> Not an Investor for our companies </p>
+	          		<% end %>
+	
+          			<p>
+            	</div>
+        	
+        </div>
+    <% end %>

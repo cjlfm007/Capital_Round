@@ -1,0 +1,32 @@
+<%= form_for(@companydocument) do |f| %>
+  <% if @companydocument.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@companydocument.errors.count, "error") %> prohibited this companydocument from being saved:</h2>
+
+      <ul>
+      <% @companydocument.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :startup_id %><br />
+    <% @companydocument.startup_id=params[:id] %>
+    <%= f.number_field :startup_id %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :path %><br />
+    <% @companydocument.path='/docs/attachments/' %>
+    <%= f.text_field :path %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

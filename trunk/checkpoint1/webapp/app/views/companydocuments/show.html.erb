@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Startup:</b>
+  <%= @companydocument.startup_id %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @companydocument.title %>
+</p>
+
+<p>
+  <b>Path:</b>
+  <%= @companydocument.path %>
+</p>
+
+<p>
+  <b>Link:</b>
+  <%= link_to @companydocument.path, @companydocument.path %>
+</p>
+
+
+<%= link_to 'Edit', edit_companydocument_path(@companydocument) %> |
+<%= link_to 'Back', companydocuments_path %>

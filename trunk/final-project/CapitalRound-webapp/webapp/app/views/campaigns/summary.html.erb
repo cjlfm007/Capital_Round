@@ -1,0 +1,44 @@
+<%= render :partial => "startups/teaser" %>
+<%= render :partial => 'startups/startupnav' %>
+
+<% if @campaign != nil %>
+
+<h3>
+  Status: <%= @campaign.status %>
+</h3>
+<% if @campaign.status == 1 %>
+  <%= link_to edit_campaign_path(@campaign) do %>
+      <button id="save-company" class="btn btn-small btn-primary">
+        Edit Campaign
+      </button>
+  <% end %>
+<% end %>
+
+<% if @campaign.status < 3  %>
+
+  <%= link_to @campaign, method: :delete, data: { confirm: 'Are you sure you want to delete the Campaign?' } do %>
+      <button id="save-company" class="btn btn-small btn-primary">
+        Delete Campaign
+      </button>
+  <% end %>
+<% else %>
+<h5>You cannot update or delete the campaign after it has been approved</h5>
+<% end %>
+
+
+<p> Goal: <%= number_to_currency(@campaign.goal_sum, :precision => 0) %> </p>
+<p> Valuation: <%= number_to_currency(@campaign.valuation_sum, :precision => 0) %> </p>
+<p> Raised: <%= number_to_currency(@campaign.raised_sum , :precision => 0) %> </p>
+<p> Closing date: <%= @campaign.closing_date.strftime('%m/%d/%Y') %> </p>
+
+
+
+<% if @campaign.status == 1 %>
+    <%= link_to(:controller => 'campaigns', :action => 'submit_campaign') do %>
+      <button class="btn btn-success">
+        <p>Save and Send for Approval</p>
+      </button>
+    <% end %>
+<% end %>
+
+<% end %>

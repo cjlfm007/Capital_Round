@@ -1,0 +1,92 @@
+<% @startup = Startup.find(params[:id]) %>
+
+    <div id="teaser-pitch">
+        <div id="teaser-info">
+        	<% if @startup.goal_sum != nil %>
+            	<p> Goal: <%= number_to_currency(@startup.goal_sum, :precision => 0) %> </p>
+            <% else %>
+            	<p> Goal: n/a </p>
+            <% end %>
+            
+            <% if @startup.raised_sum != nil %>
+            	<p> Raised: <%= number_to_currency(@startup.raised_sum, :precision => 0) %> </p>
+            <% else %>
+            	<p> Raised: n/a </p>
+            <% end %>
+            
+            <% if @startup.closing_date != nil %>
+            	<p> Closing date: <%= @startup.closing_date.strftime('%m/%d/%Y') %> </p>
+            <% else %>
+            	<p> Closing date: n/a </p>
+            <% end %>
+            
+			
+			<% if $connectiontype==2 %>
+				<%= link_to(edit_startup_path(@startup)) do %>
+					<button id="save-company" class="bottox-box-small" onMouseMove="MM_changeProp('save-company','','backgroundColor','#669966','DIV')" onMouseOut="MM_changeProp('save-company','','backgroundColor','#66CC66','DIV')">
+  						<p>Update Info</p>
+					</button>
+				<% end %>
+              <%= link_to(:action => 'editcapital', :id => params[:id]) do %>
+                  <button id="save-company" class="bottox-box-small" onMouseMove="MM_changeProp('save-company','','backgroundColor','#669966','DIV')" onMouseOut="MM_changeProp('save-company','','backgroundColor','#66CC66','DIV')">
+                    <p>Start Campaign</p>
+                  </button>
+              <% end %>
+        <% else %>
+				<% if @startup.Investors.find_by_user_id_and_ismentor(session[:id],1) == nil %>
+					<%= link_to(:controller => 'investors', :action => 'addcompany', :newstartupid => params[:id]) do %>
+						<button id="save-company" class="bottox-box-small" onMouseMove="MM_changeProp('save-company','','backgroundColor','#669966','DIV')" onMouseOut="MM_changeProp('save-company','','backgroundColor','#66CC66','DIV')">
+  							<p>Become a Mentor</p>
+				  		</button>
+					<% end %> 
+				<% else %>
+					<%= link_to(:controller => 'investors', :action => 'removecompany', :newstartupid => params[:id]) do %>
+						<button id="save-company" class="bottox-box-small" onMouseMove="MM_changeProp('save-company','','backgroundColor','#669966','DIV')" onMouseOut="MM_changeProp('save-company','','backgroundColor','#66CC66','DIV')">
+  							<p>Drop company</p>
+						</button>
+					<% end %>
+				<% end %>           		
+			<% end %>
+            
+            
+        </div>
+            
+            
+        <div id="teaser-image">
+          <% if @startup.avatar? %>
+              <%= form_for(@startup) do |f| %>
+
+                  <%= image_tag @startup.avatar.url(:thumb) %>
+                  <p><%= f.file_field :avatar%> <br>
+                    <!--  <label>Upload Photo</label>-->
+
+
+                    <%= submit_tag "Upload"%></p>
+              <% end %>
+
+
+
+          <% else %>
+
+              <!--<img src='/images/profile/Nophoto.png' />-->
+              <%= form_for(@startup) do |f| %>
+
+                  <img src='/images/profile/Nostartupimage' />
+                  <p><%= f.file_field :avatar%> <br>
+                    <!--  <label>Upload Photo</label>-->
+
+
+                    <%= submit_tag "Upload"%></p>
+              <% end %>
+          <% end %>
+        </div>
+    
+    
+        <div id="teaser-pitch-text">
+            <h1><%= @startup.name %></h1>
+            <h2><a href="http://<%= @startup.link %>" class="teaser-link-border" style="color:#FFFFFF"><%= @startup.link %></a></h2>
+            <p><%= simple_format h @startup.pitch %></p>
+        </div>
+
+    	<hr class="teaser-hr">
+   	</div>

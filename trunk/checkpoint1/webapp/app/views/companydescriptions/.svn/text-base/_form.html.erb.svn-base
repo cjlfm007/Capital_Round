@@ -1,0 +1,31 @@
+<%= form_for(@companydescription) do |f| %>
+  <% if @companydescription.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@companydescription.errors.count, "error") %> prohibited this companydescription from being saved:</h2>
+
+      <ul>
+      <% @companydescription.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <%= hidden_field_tag 'startup_id', params[:startup_id] %>
+
+  
+  <div class="field">
+    <p><%= f.label :title %></p>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <p><%= f.label :content %></p>
+    <%= f.text_area :content %>
+  </div>
+  <div class="field">
+    <p><%= f.check_box :isclosed  %> This a sencitive information, closed to the public view</p>
+  </div>
+  <div class="actions">
+    <%= f.submit 'Save'%>
+  </div>
+<% end %>

@@ -1,0 +1,86 @@
+
+ <div class="projectfield"> 
+    
+
+                            
+<% div_name='project' + startup.id.to_s() %>
+
+    <%= link_to (startup) do %>
+
+            <div id="<%= div_name %>" class="project" onMouseMove="MM_changeProp('<%= div_name %>','','backgroundColor','#EBEBEB','DIV')" onMouseOut="MM_changeProp('<%= div_name %>','','backgroundColor','#FFFFFF','DIV')">
+                <!--<img class="thumbnail1" src='<%= startup.avatar %>'>-->
+               
+             <!--   <img class="thumbnail1" src="/images/photo-little.png">-->
+<ul class="media-list">
+  <li class="media">
+    <a class="pull-left" href="#">
+      <img class="thumbnail1" src="/images/photo-little.png" >
+    </a>
+    <div class="media-body">
+    
+                <h2 class="project"><%= startup.name %></h2>
+
+      <div class="media">
+         <p><%= simple_format h startup.pitch.firstletters(100) %></p>
+     </div>
+    </div>
+  </li>
+</ul>
+<!--
+                <h2 class="project"><%= startup.name %></h2>
+
+
+                <div id="description">
+                    <p><%= simple_format h startup.pitch.firstletters(100) %></p>
+                  
+
+                </div>-->
+               <% if startup.Campaign !=nil && startup.Campaign.valuation_sum != nil && startup.Campaign.goal_sum && startup.Campaign.raised_sum%>
+                <div id="description">
+                <div style="padding-left:5px;">
+                        <label class="checkbox">
+                 Check here <input type="checkbox">
+                        </label>
+                          <label class="checkbox">
+                 Check here <input type="checkbox">
+                        </label>
+                          <label class="checkbox">
+                 Check here <input type="checkbox">
+                        </label>
+                    </div>
+                 <table>
+                    
+                <tr >
+                    <td style = "color: #54575F;font-size:15px;font-weight: bold;"><span class="label">Valuation: </span></td>
+                    <td class="td1"><%= number_to_currency(startup.Campaign.valuation_sum, :precision => 0) %> </td>
+                </tr>
+                  <tr>
+                   <td style = "color: #54575F;font-size:15px;font-weight: bold;"><span class="label label-info",style="vertical-align: top;">Goal: </span></td>
+                    <td style="color:#55A4F2;padding-left:70px;text-align:right;"><%= number_to_currency(startup.Campaign.goal_sum, :precision => 0) %> </td>
+                    </tr>
+                    <tr>
+                    <td style = "color: #54575F;font-size:15px;font-weight: bold;"><span class="label label-important">Raised:</span> </td>
+                     <td style="color:#55A4F2;padding-left:70px;text-align:right;"><%= number_to_currency(startup.Campaign.raised_sum, :precision => 0) %></td>
+                    </tr>
+              </table>
+                        <div class="progress">
+
+                         <% a= startup.Campaign.raised_sum * 100/ startup.Campaign.goal_sum %>
+                         <div class="bar bar-success" style="width:<%= a %>% ;">
+
+                         </div>
+
+                       </div>
+                  
+                     </div>
+                     <% end %>
+                </div>
+              
+
+
+        </div>
+       
+    
+  <%end%>
+  
+

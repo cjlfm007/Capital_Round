@@ -1,0 +1,34 @@
+// Place all the styles related to the Investors controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#investor-profile	{height:220px; background-color:#999; color:#ffffff; padding:10px}
+
+#investor-image		{float:left; margin-right:20px}
+#investor-image img	{height:130px}
+
+
+#investor-hr		{clear:both}
+
+#investor-companies {clear:both}
+
+#investor-text		{ float:left; width:500px; }
+#investor-botton	{float:right; width:180px; }
+
+#investor-text h2	{ font-size:18px; margin-top:0px; margin-bottom:30px;}
+#investor-text p	{ margin-top:-10px;}
+				
+.people-frame	{margin:5px 10px 15px 5px; padding:10px; width:250px; height:100px; float:left; 
+				background-color:#FFFFFF; border-bottom:1px #ccc solid; border-right:1px #EFEFEF solid;
+				}
+				
+.people-frame h2	{ color:#c60; margin-top:0px; width:140px; float:right;}
+.people-frame p		{color:#333; font-size:14px; margin-top:-10px; width:140px; float:right;}
+
+.people-image		{text-align:center; height:100px; float:left;}
+
+.person-image		{text-align:center; height:30px; float:left; margin:5px}
+
+
+.person-frame	{padding:2px; width:170px; height:40px; margin: 0 auto; 
+				background-color:inherit;}

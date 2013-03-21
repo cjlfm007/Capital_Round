@@ -1,0 +1,6 @@
+<%= render 'teaser' %>
+ 
+<%= render 'startupnav' %>
+
+<%= render :partial => 'companyteams/employeedetailed', :collection => @startup_teams %>
+	

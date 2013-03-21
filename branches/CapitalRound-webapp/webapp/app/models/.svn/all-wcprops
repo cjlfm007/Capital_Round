@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/webapps/team15/!svn/ver/98/branches/CapitalRound-webapp/webapp/app/models
+END
+companyteam.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/webapps/team15/!svn/ver/89/branches/CapitalRound-webapp/webapp/app/models/companyteam.rb
+END
+document.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/webapps/team15/!svn/ver/14/branches/CapitalRound-webapp/webapp/app/models/document.rb
+END
+user.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/webapps/team15/!svn/ver/73/branches/CapitalRound-webapp/webapp/app/models/user.rb
+END
+authentication.rb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/webapps/team15/!svn/ver/73/branches/CapitalRound-webapp/webapp/app/models/authentication.rb
+END
+campaign.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/webapps/team15/!svn/ver/78/branches/CapitalRound-webapp/webapp/app/models/campaign.rb
+END
+approvalstatuses.rb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/webapps/team15/!svn/ver/96/branches/CapitalRound-webapp/webapp/app/models/approvalstatuses.rb
+END
+fieldstate.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/webapps/team15/!svn/ver/98/branches/CapitalRound-webapp/webapp/app/models/fieldstate.rb
+END
+univaffiliation.rb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/webapps/team15/!svn/ver/56/branches/CapitalRound-webapp/webapp/app/models/univaffiliation.rb
+END
+follower.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/webapps/team15/!svn/ver/53/branches/CapitalRound-webapp/webapp/app/models/follower.rb
+END
+owner.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/webapps/team15/!svn/ver/53/branches/CapitalRound-webapp/webapp/app/models/owner.rb
+END
+fund.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/webapps/team15/!svn/ver/14/branches/CapitalRound-webapp/webapp/app/models/fund.rb
+END
+startup.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/webapps/team15/!svn/ver/74/branches/CapitalRound-webapp/webapp/app/models/startup.rb
+END
+.gitkeep
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/webapps/team15/!svn/ver/12/branches/CapitalRound-webapp/webapp/app/models/.gitkeep
+END
+companydocument.rb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/webapps/team15/!svn/ver/14/branches/CapitalRound-webapp/webapp/app/models/companydocument.rb
+END
+companyupdate.rb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/webapps/team15/!svn/ver/67/branches/CapitalRound-webapp/webapp/app/models/companyupdate.rb
+END
+investor.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/webapps/team15/!svn/ver/83/branches/CapitalRound-webapp/webapp/app/models/investor.rb
+END
+companydescription.rb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/webapps/team15/!svn/ver/67/branches/CapitalRound-webapp/webapp/app/models/companydescription.rb
+END
+allfield.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/webapps/team15/!svn/ver/98/branches/CapitalRound-webapp/webapp/app/models/allfield.rb
+END

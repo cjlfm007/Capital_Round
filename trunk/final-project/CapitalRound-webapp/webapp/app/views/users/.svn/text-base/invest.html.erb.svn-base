@@ -1,0 +1,16 @@
+<%= render 'teaser' %>
+<%= render 'usernav' %>
+
+<% if session[:owner_type] == 1 %>
+  <h3>Companies you have invested in (Portfolio)</h3>
+<% else %>
+  <h3>Companies <%= @user.firstname %> has invested in (Portfolio)</h3>
+<% end %>
+  <%= render :partial =>  @user.Investor_startups.uniq, :template => 'startups/_startup' %>
+<% if @user.Investors.length == 0 %>
+  <% if params[:id]==session[:id].to_s() %>
+  <p>You do not have our companies in your portfolio. You can add companies from our portfolio using <%= link_to 'this link', startups_path %></p>
+  <% else %>
+  <p>This person does not have our companies in portfolio.</p>
+  <% end %>
+<% end %>

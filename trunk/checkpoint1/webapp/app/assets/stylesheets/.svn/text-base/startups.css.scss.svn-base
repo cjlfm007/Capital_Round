@@ -1,0 +1,63 @@
+// Place all the styles related to the Projects controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.project-frame	{margin:0px 16px 30px 18px; padding:20px 25px 0 25px; width:200px; float:left; 
+				background-color:#FFFFFF; border-bottom:1px #ccc solid; border-right:1px #EFEFEF solid;
+				}
+.project-frame h2	{ color:#c60;}
+.project-frame p	{color:#333; font-size:14px; }
+.project-goal	{float:left; color:#c60;display:inline;font-size:12px;font-weight:bold; }
+.project-raised	{float:right; color:#c60;display:inline;font-size:12px;font-weight:bold;}
+.project-image	{text-align:center; width:180px; height:120px; margin-left:auto; margin-right:auto; display: block}
+
+#project-nav	{margin-top:-10px; padding-bottom:5px; border-bottom:1px #ccc solid;}
+#project-nav li	{display:inline; padding:0 15px; margin:0}
+#project-nav ul	{display:inline; padding:0; margin:0}
+.nav-current	{color:#c60;}
+
+
+
+
+#teaser-info		{width:120px; height:180px; float:right; margin:10px 0px 0px 0; color:#999; 
+						text-align:center; padding:0 10px; background-color:#fff;}
+#teaser-info li 	{display:inline;}
+#teaser-info p		{font-size:16px;}
+
+#teaser-pitch		{ margin:0px 0px 20px 0px; padding:10px; background-color:#999; height:200px;}
+
+#teaser-pitch-text		{ margin:10px 160px 0px 20px; color:#ffffff; }
+#teaser-pitch-text h1	{font-size:18px; font-weight:bold; border-bottom:none; margin-bottom:0; margin-top:0px; color:#ffffff;}
+#teaser-pitch-text h2	{font-size:16px; font-weight:normal; font-style:italic; border-bottom:none; margin-top:0px; }
+#teaser-pitch-text p	{font-size:16px;}
+
+
+#teaser-image		{float:left; margin-right:20px}
+#teaser-image img	{height:130px}
+#teaser-charts 		{float:right; width:220px;}
+#teaser-charts img 	{width:200px; margin:10px;}
+
+
+/* ------------ Teaser text ---------------- */
+
+#teaser-text		{width:600px; padding:0 20px 10px 20px; margin:0; 
+					border-bottom:1px #ccc solid; border-right:1px #EFEFEF solid;}
+#teaser-text p		{padding:0 20px;}
+#teaser-text img	{padding:0 20px;}
+#teaser-text h4		{margin-bottom:-10px;}
+
+
+
+#teaser-links			{clear:both; text-align:center; margin-top:30px;}
+#teaser-links ul		{margin-left:-100px;}
+#teaser-links ul li		{display:inline; padding:0 80px; font-weight:bold; font-size:16px;}
+	
+
+
+.teaser-hr			{clear:both; display:none;}
+.teaser-link-border	{border-right:0px #999 solid;}
+
+
+
+#people-list			{width:180px; padding:0 10px 10px 10px; border-bottom:1px #ccc solid; border-right:1px #EFEFEF solid;}

@@ -1,0 +1,6 @@
+<%= render 'teaser', :id => params[:id] %>
+ 
+<%= render 'startupnav', :id => params[:id] %> 
+
+<%= render :partial => 'companyteams/employeedetailed', :collection => Companyteam.find(:all,:conditions => ['startup_id=' + params[:id]]) %>
+	

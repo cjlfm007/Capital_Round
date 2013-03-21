@@ -1,0 +1,67 @@
+<%= form_for(@campaign) do |f| %>
+
+
+    <% if @campaign.errors[:goal_sum].length > 0 %>
+        <div class="field">
+          <h4><font color = 'red'>Goal* (Please enter a value greater than $5000)</font></h4>
+          <div class="input-prepend input-append" style="color:red">
+            <span class="add-on">$</span>
+            <%= f.text_field :goal_sum ,:style => "border-color:red" %>
+
+          </div>
+        </div>
+    <%else%>
+        <div class="field">
+          <h4>Goal* (Please enter a value greater than $5000)</h4>
+          <div class="input-prepend input-append">
+            <span class="add-on">$</span>
+            <%= f.text_field :goal_sum%>
+
+          </div>
+        </div>
+    <%end%>
+    <br />
+    <% if @campaign.errors[:valuation_sum].length > 0 %>
+        <div class="field">
+        <h4><font color = 'red'>Valuation of the startup*</font></h4>
+        <div class="input-prepend input-append" style="color:red">
+          <span class="add-on"><font color = 'red'>$</font></span>
+          <%= f.text_field :valuation_sum,:style => "border-color:red" %>
+        </div>
+        </div>
+    <%else%>
+        <h4>Valuation of the startup*</h4>
+        <div class="input-prepend input-append">
+          <span class="add-on">$</span>
+          <%= f.text_field :valuation_sum %>
+        </div>
+    <%end%>
+    <br />
+    <% if @campaign.errors[:closing_date].length > 0 %>
+    <div class="field">
+      <h4 style="color:red">Closing date*</h4>
+      <%= f.date_select :closing_date,:style => "border-color:red" %>
+    </div>
+        <%else%>
+        <div class="field">
+          <h4>Closing date*</h4>
+          <%= f.date_select :closing_date %>
+        </div>
+     <%end%>
+
+    </br>
+    <p>* - requred fields </p>
+
+    <%= hidden_field_tag 'nextstep', 'exit' %>
+
+    <%= link_to do %>
+        <button id="next-company" class="btn btn-primary">
+          <p>Save and Continue</p>
+        </button>
+
+    <% end %>
+    <%= link_to(:controller => 'startups', :action => 'show', :id => session[:startup_id]) do %>
+        <button type="button" class="btn">Cancel</button>
+    <% end %>
+<% end %>
+

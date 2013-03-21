@@ -1,0 +1,16 @@
+<%= render 'teaser' %>
+<%= render 'usernav' %>
+
+<% if session[:owner_type] == 1 %>
+    <h3>Companies you are following</h3>
+<% else %>
+    <h3>Companies <%= @user.firstname %> is following</h3>
+<% end %>
+<%= render :partial =>  @user.Follower_startups.uniq, :template => 'startups/_startup' %>
+<% if @user.Followers.length == 0 %>
+    <% if params[:id]==session[:id].to_s() %>
+        <p>You do not have companies that you are following. You can add companies <%= link_to 'here', startups_path %></p>
+    <% else %>
+        <p>This person does not follow companies.</p>
+    <% end %>
+<% end %>

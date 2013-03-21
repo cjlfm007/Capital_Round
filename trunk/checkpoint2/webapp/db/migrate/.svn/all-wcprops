@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/db/migrate
+END
+20120909211459_create_companyteams.rb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/db/migrate/20120909211459_create_companyteams.rb
+END
+20121029010126_create_authentications.rb
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/db/migrate/20121029010126_create_authentications.rb
+END
+20120706030247_create_investors.rb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/db/migrate/20120706030247_create_investors.rb
+END
+20120703190837_create_startups.rb
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/db/migrate/20120703190837_create_startups.rb
+END
+20120811003124_create_companydocuments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/db/migrate/20120811003124_create_companydocuments.rb
+END
+20120909180232_create_companydescriptions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/db/migrate/20120909180232_create_companydescriptions.rb
+END
+20120809035443_create_companyupdates.rb
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/db/migrate/20120809035443_create_companyupdates.rb
+END
+20120910034057_add_avatar_to_pictures.rb
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/db/migrate/20120910034057_add_avatar_to_pictures.rb
+END
+20120705190028_create_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/db/migrate/20120705190028_create_users.rb
+END
+20120910031858_create_pictures.rb
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/db/migrate/20120910031858_create_pictures.rb
+END
+20121029040628_create_campaigns.rb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/db/migrate/20121029040628_create_campaigns.rb
+END
+20121029045822_create_documents.rb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/db/migrate/20121029045822_create_documents.rb
+END
+20120826185222_create_funds.rb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/db/migrate/20120826185222_create_funds.rb
+END

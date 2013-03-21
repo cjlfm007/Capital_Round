@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/app/views/home
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/app/views/home/index.html.erb
+END
+contacts.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/app/views/home/contacts.html.erb
+END
+noaccess.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/app/views/home/noaccess.html.erb
+END
+demo.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/app/views/home/demo.html.erb
+END

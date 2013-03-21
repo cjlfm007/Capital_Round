@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head >
+  <Link rel="shortcut icon" href="/images/logo_icon.png">
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+  <script src="/js/bootstrap-datepicker.js"></script>
+  <title>Capital Round</title>
+  <%= stylesheet_link_tag    "bootstrap", :media => "all" %>
+  <%= stylesheet_link_tag    "datepicker", :media => "all" %>
+ 
+   <%= javascript_include_tag "prototype", "effects" %>
+
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+
+  <script type="text/javascript">
+  $(function(){
+   $('.carousel').carousel();
+});
+  $(function(){
+   $('#example').tooltip(options)
+});
+  
+
+
+    function MM_changeProp(objId,x,theProp,theValue) { //v9.0
+      var obj = null; with (document){ if (getElementById)
+      obj = getElementById(objId); }
+      if (obj){
+      if (theValue == true || theValue == false)
+        eval("obj.style."+theProp+"="+theValue);
+      else eval("obj.style."+theProp+"='"+theValue+"'");
+      }
+    }
+    </script>
+    
+
+  
+</head>
+<body >
+  <script src="assets/javascript/bootstrap-tooltip.js"></script>
+
+<div class="navbar navbar-fixe-top" > 
+   <div id="container">
+
+    <div style="background-color: #444444;height: 40px;">
+      <nav>
+              <ul class="nav pull-left">
+            <li><h4 style="padding-left:20px;"><%= link_to 'Capital Round', :controller => 'home'  %></h4>
+            
+            </li>
+            </ul>
+          </nav>
+              <ul class="nav pull-right">
+         <% if session[:id] == nil || session[:id] == 0 %>
+                <%= link_to 'Login', :controller => 'authentications', :action => 'login' %> |
+                <%= link_to 'Join Us', authentications_new_path %>
+          <% else %>
+            <% user = User.find(session[:id])  %>
+            <%= link_to :controller => 'users', :id => session[:id] do %>
+                <%= user.firstname %> <%= user.lastname %>
+            <% end %> |
+
+            <% if user.Owners.length != 0 %>
+                <%= link_to :controller => 'startups', :action => "show", :id => user.Owner_startups.first.id do %>
+                    <%= user.Owner_startups.first.name %>
+                <% end %> |
+            <% end %>
+          <%= link_to 'Logout', :controller => 'authentications', :action => 'logout' %> 
+        <% end %>
+      </ul>
+
+      </div>
+    
+      
+</div>
+<!--<%if session[:id] == nil || session[:id] == 0%>
+<div class="alert">
+  <button type="button" class="close" data-dismiss="alert">×</button>
+  <strong>Warning!</strong> Remember you should <%= link_to 'Login', :controller => 'authentications', :action => 'login' %> , if not, you should <%= link_to 'Join First', :controller => 'authentications', :action => 'new' %> 
+</div>
+<% end %>-->
+  <div class="navbar-inner">
+        <div class="container">
+          
+          <nav>
+            <ul class="nav pull-left">
+
+          
+          <li class="badge1"> <%= link_to 'Invest in Startup'%></li>
+          <li class="badge1"> <%= link_to 'Raise Capital'%></li>
+         
+        </ul>
+     
+          <ul class="nav pull-right1">
+                <li ><%= link_to 'HOME', :controller => 'home' %></li>
+                <li ><%= link_to 'STARTUPS', startups_path %></li>
+                <li ><%= link_to 'PEOPLE', :controller => 'investors', :action => 'people'%></li>
+                <li><%= link_to 'ABOUT US', home_contacts_path %></li>
+<% if session[:id] != nil and session[:id] != 0  %>
+    <% if User.find(session[:id]).Funds.find_by_fund_id(1) != nil %>
+                <li > <%= link_to 'Approval view', :controller => 'funds', :action => 'index'%></li>
+    <% end %>
+<% end %>
+            </ul>
+        </nav>
+        </div>
+        
+  <div style="clear:both"></div>
+  </div>
+</div>        
+
+
+  <div style="clear:both"></div>
+
+
+
+<div  class="container">
+  
+
+    <%= yield %>
+
+
+    <div style="clear:both"></div>  
+    <div id="contacts-box">
+      <p>Copyright 2012 - Capital Round - Pittsburgh, PA</p>
+    </div>
+</div>
+
+</body>
+</html>

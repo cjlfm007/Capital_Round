@@ -1,0 +1,143 @@
+
+    <div id="investor-profile">	            
+
+
+        <div id="investor-image">
+            <% if @user.avatar? %>
+              <%= form_for(@user) do |f| %>
+
+                  <%= image_tag @user.avatar.url(:thumb) %>
+                  <p><%= f.file_field :avatar%> <br>
+                    <!--  <label>Upload Photo</label>-->
+
+
+                    <%= submit_tag "Upload"%></p>
+              <% end %>
+
+
+
+			<% else %>
+
+				<!--<img src='/images/profile/Nophoto.png' />-->
+              <%= form_for(@user) do |f| %>
+
+                  <img src='/images/profile/Nophoto.png' />
+                  <p><%= f.file_field :avatar%> <br>
+                  <!--  <label>Upload Photo</label>-->
+
+
+                  <%= submit_tag "Upload"%></p>
+              <% end %>
+            <% end %>
+        </div>
+        
+            	
+        <div id="investor-text">
+            <h2><%= @user.firstname %> <%= @user.lastname %></h2>
+            <p>CMU affilation: <%= @user.cmuaffiliation %></p>
+            <p>Contact information: <%= @user.email %></p>
+            
+            <% mentornumber = @user.Investors.count :all, :conditions => 'ismentor = 1' %>
+          	<% if mentornumber != 0 %>
+     			<% if mentornumber == 1 %>
+      				<p>Mentor for one company</p>
+      			<% else %>
+          			<p>Mentor for <%= mentornumber %> companies</p>
+          		<% end %>
+          	<% else %>
+          		<p> Not a Mentor for our companies </p>
+    		<% end %>
+          		
+        	<% investornumber = @user.Investors.count :all, :conditions => 'isinvestor = 1' %>
+          	<% if investornumber != 0 %>
+           		<% if investornumber == 1 %>
+    				<p>Investor for one company</p>
+      			<% else %>
+       				<p>Investor for <%= investornumber %> companies</p>
+          		<% end %>
+          	<% else %>
+          		<p> Not an Investor for our companies </p>
+    		<% end %>
+    	</div>
+
+		<% if params[:id]==session[:id].to_s() %>
+	   		<div id="investor-botton">
+	   			<%= link_to(:controller => "users", :action => "edit", :id => @user.id) do %>
+	        		<button id="edit-profile" class="bottox-box" onMouseMove="MM_changeProp('edit-profile','','backgroundColor','#669966','DIV')" onMouseOut="MM_changeProp('edit-profile','','backgroundColor','#66CC66','DIV')">
+    					<p>Edit your profile</p>
+    				</button>
+    		    <% end %>
+	   			<% if @user.Investors.find_by_isowner(1) == nil %>
+	   				<%= link_to(:controller => 'startups', :action => 'new') do %>
+        				<button id="new-company" class="bottox-box" onMouseMove="MM_changeProp('new-company','','backgroundColor','#669966','DIV')" onMouseOut="MM_changeProp('new-company','','backgroundColor','#66CC66','DIV')">
+    						<p>Start your company</p>
+      		  			</button>
+        			<% end %>
+        		<% else %>
+        			<%= link_to(:controller => 'startups', :action => 'show', :id => @user.Investors.find_by_isowner(1).startup_id ) do %>
+        				<button id="new-company" class="bottox-box" onMouseMove="MM_changeProp('new-company','','backgroundColor','#669966','DIV')" onMouseOut="MM_changeProp('new-company','','backgroundColor','#66CC66','DIV')">
+    						<p>Manage your company</p>
+      		  			</button>
+        			<% end %>
+        		<% end %>
+        		<% if @user.Funds.find_by_fund_id(1) != nil %>
+        			<%= link_to(:controller => 'funds', :action => 'index') do %>
+	        			<button id="add-company" class="bottox-box" onMouseMove="MM_changeProp('add-company','','backgroundColor','#669966','DIV')" onMouseOut="MM_changeProp('add-company','','backgroundColor','#66CC66','DIV')">
+    						<p>Open the OFEF view</p>
+    					</button>
+    				<% end %>
+    			<% end %>
+    	 	</div>
+		<% end %>
+
+
+   	</div>
+
+<p id="notice"><%= @shortnotice %></p>
+
+
+<div id="investor-companies"> 
+	<% if params[:id]==session[:id].to_s() %>
+		<h1>Companies where you are a Mentor</h1>
+	<% else %>
+		<h1>Companies where <%= @user.firstname %> is a Mentor</h1>			
+	<% end %>
+
+	<% if @user.Investors.find_by_ismentor(1)==nil %>
+		<% if params[:id]==session[:id].to_s() %>
+			<p>You are not a Mentor for our companies. You can become a Mentor from our portfolio using <%= link_to 'this link', startups_path %></p>
+		<% else %>
+			<p>This person is not a Mentor for our companies.</p>			
+		<% end %>
+	<% else %>
+		<% if params[:id]==session[:id].to_s() %>
+			<p><%= link_to 'Add more companies', startups_path %></p>
+		<% end %>
+	<% end %>
+	<% for invetor in @user.Investors.where(:ismentor => 1).each %>
+		<%= render :partial =>  Startup.find(invetor.startup_id), :template => 'startups/_startup' %>
+	<% end %>
+
+</div>
+
+<div id="investor-companies"> 
+
+	<% if params[:id]==session[:id].to_s() %>
+		<h1>Companies in your Portfolio</h1>
+	<% else %>
+		<h1>Companies in <%= @user.firstname %>'s Portfolio</h1>			
+	<% end %>
+	
+	<% for invetor in @user.Investors.where(:isinvestor => 1).each %>
+		<%= render :partial =>  Startup.find(invetor.startup_id), :template => 'startups/_startup' %>
+	<% end %>
+	<% if @user.Investors.find_by_isinvestor(1)==nil %>
+		<% if params[:id]==session[:id].to_s() %>
+			<p>You do not have our companies in your protfolio. You can add companies from our portfolio using <%= link_to 'this link', startups_path %></p>
+		<% else %>
+			<p>This person does not have our companies in protfolio.</p>			
+		<% end %>
+	<% end %>
+
+</div>
+

@@ -1,0 +1,88 @@
+
+<div class="teaser">
+
+  <div class="teaser-info">
+
+    <% investor_number = @user.Investors.count %>
+    <% if investor_number != 0 %>
+        <% if investor_number == 1 %>
+            <p>Invested in one company</p>
+        <% else %>
+            <p>Invested in <%= investor_number %> companies</p>
+        <% end %>
+    <% else %>
+        <p> Have not invested yet </p>
+    <% end %>
+
+    <% follower_number = @user.Followers.count %>
+    <% if follower_number != 0 %>
+        <% if follower_number == 1 %>
+            <p>Following one company</p>
+        <% else %>
+            <p>Following <%= follower_number %> companies</p>
+        <% end %>
+    <% else %>
+        <p> Is not following any companies yet </p>
+    <% end %>
+
+
+    <% owner_number = @user.Owners.count %>
+    <% if owner_number != 0 %>
+        <p> Founder of <%= link_to @user.Owner_startups[0].name, :controller => 'startups', :action => 'show', :id => @user.Owners[0].startup_id %> </p>
+    <% else %>
+        <% if session[:owner_type] == 1 %>
+            <%= link_to(:controller => 'startups', :action => 'new') do %>
+                <button class="btn btn-success">
+                  <p> Start your company</p>
+                </button>
+            <% end %>
+        <% end %>
+    <% end %>
+
+  </div>
+
+  <div id="teaser-image" style="float:left">
+    <% if @user.avatar? %>
+        <%= image_tag @user.avatar.url(:thumb), :class => "img-rounded-mid"  %>
+    <% else %>
+        <img src='/images/profile/Nophoto.png' class="img-rounded-mid"  />
+    <% end %>
+
+    <div id="image_update">
+          <button class="btn btn-mini" onClick="MM_changeProp('image_form','','visibility','visible','DIV'); MM_changeProp('image_update','','visibility','hidden','DIV')">
+                  Update Photo
+                 </button>
+    </div>
+          <div id="image_form" style="visibility:hidden">
+          <%= form_for(@user) do |f| %>
+          <p><%= f.file_field :avatar%> <br>
+            <%= submit_tag "Upload" %></p>
+      <% end %>
+    </div>
+
+  </div>
+
+
+  <div id="teaser-pitch-text">
+
+    <h2><%= @user.firstname %> <%= @user.lastname %></h2>
+    <p>CMU affilation: <%= @user.cmuaffiliation %></p>
+
+
+    <% if session[:owner_type] == 1 %>
+        <%= link_to(:controller => "users", :action => "edit", :id => @user.id) do %>
+            <button class="btn btn-small btn-primary">
+              <p>Edit your profile</p>
+            </button>
+        <% end %>
+        <% if @user.Funds != nil %>
+            <%= link_to(:controller => 'funds', :action => 'index') do %>
+                <button class="btn btn-small btn-primary">
+                  <p>Open Approval team view</p>
+                </button>
+            <% end %>
+        <% end %>
+    <% end %>
+
+  </div>
+</div>

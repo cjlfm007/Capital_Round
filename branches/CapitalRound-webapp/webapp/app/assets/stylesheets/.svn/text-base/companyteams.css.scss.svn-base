@@ -1,0 +1,21 @@
+// Place all the styles related to the Companyteams controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#team-description h2  { color:#c60; border-bottom:1px #ccc solid;}
+#team-description h3  { font-weight:bold}
+#team-description p   { margin:5px}
+
+#team-description   {width:400px; float:left; margin-bottom:20px}
+#team-contacts    {width:300px; float:right; margin:30px 100px 20px 0; }
+#team-close     {clear:both; }
+
+#team-contacts ul {list-style-type:none;}
+#team-contacts li {padding-bottom:5px}
+#employee-description {float:left}
+#employee-description {float:right}
+
+.employee-image   {height:100px; float:left;}
+
+.team-image   {height:100px; float:left; margin:15px 10px 0 10px}
+

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/helpers
+END
+funds_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/helpers/funds_helper.rb
+END
+companyteams_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/helpers/companyteams_helper.rb
+END
+documents_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/helpers/documents_helper.rb
+END
+users_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/helpers/users_helper.rb
+END
+authentications_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/helpers/authentications_helper.rb
+END
+campaigns_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/helpers/campaigns_helper.rb
+END
+application_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/helpers/application_helper.rb
+END
+startups_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/helpers/startups_helper.rb
+END
+companydocuments_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/helpers/companydocuments_helper.rb
+END
+home_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/helpers/home_helper.rb
+END
+companyupdates_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/helpers/companyupdates_helper.rb
+END
+investors_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/helpers/investors_helper.rb
+END
+companydescriptions_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/webapps/team15/!svn/ver/100/trunk/final-project/CapitalRound-webapp/webapp/app/helpers/companydescriptions_helper.rb
+END

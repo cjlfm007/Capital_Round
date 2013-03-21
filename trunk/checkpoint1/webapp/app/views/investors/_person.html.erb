@@ -1,0 +1,13 @@
+<% div_name='investor' + person.id.to_s() %>
+
+	<%= link_to :controller => 'investors', :id => person.id do %>
+        <div id="<%= div_name %>" class="person-frame" onMouseMove="MM_changeProp('<%= div_name %>','','backgroundColor','#EBEBEB','DIV')" onMouseOut="MM_changeProp('<%= div_name %>','','backgroundColor','#FFFFFF','DIV')">
+ 	        	<% if  person.image_path != nil %>
+    	        	<img class="person-image" src='/images/profile/<%= person.image_path %>'>
+				<% else %>
+					<img class="person-image" src='/images/profile/Nophoto.png' />
+            	<% end %>
+         	
+          		<h4><%= person.firstname %>  <%= person.lastname %></h4>        	
+        </div>
+    <% end %>

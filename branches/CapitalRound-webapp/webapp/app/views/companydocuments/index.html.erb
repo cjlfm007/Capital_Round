@@ -1,0 +1,31 @@
+<h1>Listing companydocuments</h1>
+
+<table>
+  <tr>
+    <th>Startup</th>
+    <th>Title</th>
+    <th>Path</th>
+    <th>Link</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @companydocuments.each do |companydocument| %>
+  <tr>
+    <td><%= companydocument.startup_id %></td>
+    <td><%= companydocument.title %></td>
+    <td><%= companydocument.path %></td>
+    <td><%= link_to 'Link', companydocument.path %></td>
+    <td>  -----  </td>
+    <td><%= link_to 'Show', companydocument %></td>
+    <td><%= link_to 'Edit', edit_companydocument_path(companydocument) %></td>
+    <td><%= link_to 'Destroy', companydocument, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Document', new_document_path %>

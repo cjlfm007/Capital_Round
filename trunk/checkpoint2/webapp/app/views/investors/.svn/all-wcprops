@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/app/views/investors
+END
+_person.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/app/views/investors/_person.html.erb
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/app/views/investors/edit.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/app/views/investors/new.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/app/views/investors/show.html.erb
+END
+tmp.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/app/views/investors/tmp.html.erb
+END
+_form.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/app/views/investors/_form.html.erb
+END
+_people.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/app/views/investors/_people.html.erb
+END
+people.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/webapps/team15/!svn/ver/49/trunk/checkpoint2/webapp/app/views/investors/people.html.erb
+END

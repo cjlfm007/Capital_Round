@@ -1,0 +1,37 @@
+<%= form_for(@campaign) do |f| %>
+  <% if @campaign.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@campaign.errors.count, "error") %> prohibited this campaign from being saved:</h2>
+
+      <ul>
+      <% @campaign.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :startup_id %><br />
+    <%= f.number_field :startup_id %>
+  </div>
+  <div class="field">
+    <%= f.label :goal_sum %><br />
+    <%= f.number_field :goal_sum %>
+  </div>
+  <div class="field">
+    <%= f.label :raised_sum %><br />
+    <%= f.number_field :raised_sum %>
+  </div>
+  <div class="field">
+    <%= f.label :closing_date %><br />
+    <%= f.datetime_select :closing_date %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

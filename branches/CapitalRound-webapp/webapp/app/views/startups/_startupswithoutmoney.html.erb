@@ -1,0 +1,28 @@
+ <% if startup.valuation_sum==nil && startup.goal_sum==nil && startup.raised_sum==nil%>
+ <div class="projectfield"> 
+    
+
+                            
+<% div_name='project' + startup.id.to_s() %>
+
+	<%= link_to (startup) do %>
+
+            <div id="<%= div_name %>" class="project" onMouseMove="MM_changeProp('<%= div_name %>','','backgroundColor','#EBEBEB','DIV')" onMouseOut="MM_changeProp('<%= div_name %>','','backgroundColor','#FFFFFF','DIV')">
+             	<img class="thumbnail1" src='<%= startup.avatar %>'>
+              	<h2 class="project"><%= startup.name %></h2>
+
+                <div id="description">
+              		<p><%= simple_format h startup.pitch.firstletters(100) %></p>
+                </div>
+               
+
+                </div>
+              
+
+
+        </div>
+       
+    <% end %>
+  <%end%>
+  
+

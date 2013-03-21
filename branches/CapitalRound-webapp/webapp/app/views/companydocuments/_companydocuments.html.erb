@@ -1,0 +1,8 @@
+<% div_name='companydocument' + companydocuments.id.to_s() %>
+
+	<%= link_to companydocuments.path do %>
+        <div id="<%= div_name %>" class="person-frame" onMouseMove="MM_changeProp('<%= div_name %>','','backgroundColor','#EBEBEB','DIV')" onMouseOut="MM_changeProp('<%= div_name %>','','backgroundColor','#FFFFFF','DIV')">
+	       	<img class="person-image" src='/images/pdf.jpeg'>
+			<h4><%= companydocuments.title %></h4>        	
+        </div>
+    <% end %>

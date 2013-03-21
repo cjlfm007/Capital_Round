@@ -1,0 +1,31 @@
+	<div id="team-description">
+	    <% if employeefull.picture_id != nil %>
+    	  <%= image_tag Picture.find(employeefull.picture_id).avatar_url(:thumb), :class => "team-image" if Picture.find(employeefull.picture_id).avatar_url %>
+    	  <%= link_to 'Update photo', edit_picture_path(Picture.find(employeefull.picture_id)) %>
+		<% else %>
+		  <img class="team-image" src='/images/profile/Nophoto.png' />
+		  <%= link_to 'Update photo', :action => 'new', :controller => 'pictures', :title => 'Sergey' %>
+	    <% end %>   
+	    
+		<h2> <%= employeefull.firstname %> <%= employeefull.lastname %> 
+		  <%= link_to 'Edit', edit_companyteam_path(employeefull) %> | 
+          <%= link_to 'Delete', employeefull, method: :delete, data: { confirm: 'Are you sure you want to delete this person from the team?' } %>  
+		</h2>
+   	 	<h3> <%= employeefull.title %> </h3>
+   	 	<p> <%= employeefull.description %> </p>   	     	
+    </div>
+    
+    <div id="team-contacts">
+    	<ul>
+    		<li> Email: <a href="mailto:<%= employeefull.email %>"><%= employeefull.email %></a> </li>
+   	     	<li> Bio: <a href="<%= employeefull.linkedin %>">LinkedIn Profile</a></li>
+   	     	<li> Phone: <%= employeefull.phone %> </li>
+   	     	<li> Address: <%= employeefull.address %> </li>  	     	
+   	 	</ul>
+    </div>
+    
+    
+
+    
+    <div id="team-close"></div>
+    

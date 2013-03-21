@@ -1,0 +1,6 @@
+<%= render 'teaser' %>
+<%= render :partial => 'startupnav' %>
+
+<h2>Editing startup: <%= @startup.name %></h2>
+
+<%= render 'form' %>

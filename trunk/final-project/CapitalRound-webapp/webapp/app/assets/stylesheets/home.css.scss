@@ -1,0 +1,15 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+.home-content h1	{padding:5px 10px; border-bottom:1px #c60 solid; 
+					color:#333; background-color:#FFFFFF; }
+.home-content h3	{font-size:18px; padding:0px 10px; border-bottom:0px #c60 solid; 
+					color:#333; background-color:#FFFFFF; }
+
+.home-investors		{width:160px; height:100px; float:left; margin:0 10px; padding:0 10px;
+					border-bottom:1px #ccc solid; border-right:1px #EFEFEF solid; text-align:center;}
+.home-investors p	{font-size:14px}
+.home-investors h2	{color:#c60}
